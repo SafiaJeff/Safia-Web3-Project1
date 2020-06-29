@@ -67,8 +67,8 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/deploy/index.html",
-		"oF": 2
+		"oAP": "/dev/index.html",
+		"oF": 0
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
@@ -76,8 +76,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/deploy/js/scripts-min.js",
-		"oF": 2,
+		"oAP": "/dev/js/scripts-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -232,8 +232,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/deploy/css/styles.css",
-		"oF": 2,
+		"oAP": "/dev/scss/styles.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 0
 		},
@@ -252,7 +252,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 614697020.77360106,
-	"displayValue": "Web-3-Demo",
+	"displayValue": "Safia-Web3-Project1",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-red",
 	"iconImageWasSetByUser": 0

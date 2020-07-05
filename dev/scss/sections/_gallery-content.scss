@@ -1,0 +1,95 @@
+/* =============
+    Gallery Content
+============= */
+
+#gallery-gallery{
+    ul{
+        display: grid;
+        gap: 20px;
+        grid-template-rows: repeat(4, 330px );
+
+        @include md{
+            grid-template-rows: 330px 350px 225px;
+            grid-template-columns:  auto 60%;
+            grid-template-areas: 
+                "one two"
+                "one three"
+                "four four";
+            gap: 15px;
+        }
+
+        @include lg{
+            grid-template-rows: 410px auto 305px;
+            grid-template-columns:  repeat(12, 1fr);
+            grid-template-areas: 
+                "one one one one one two two two two two two two"
+                "three three three three five five five five six six six six"
+                "four four four four five five five five six six six six";
+            gap: 20px;
+        }
+
+        @include xl{
+            grid-template-columns: 350px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 410px 550px 630px;
+            gap: 20px 20px;
+            grid-template-areas: "one one one two two two two two"
+            "seven seven seven seven seven seven seven seven"
+            "three three five five five six six six"
+            "four four five five five six six six";
+        }
+
+        @include xl{
+            // grid-template-rows: 410px 550px 305px 305px;
+            // grid-template-columns:  repeat(16, 1fr);
+            // grid-template-areas: 
+                
+            // gap: 20px;
+        }
+
+        li{
+            img{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        li:nth-child(1){
+            @include md{
+                grid-area: one;
+            }
+        }
+        li:nth-child(2){
+            @include md{
+                grid-area: two;
+            }
+        }
+        li:nth-child(3){
+            @include md{
+                grid-area: three;
+            }
+        }
+        li:nth-child(4){
+            @include md{
+                grid-area: four;
+            }
+        }
+        li:nth-child(5){
+            @include lg{
+                grid-area: five;
+            }
+        }
+        li:nth-child(6){
+            @include lg{
+                grid-area: six;
+            }
+        }
+        li:nth-child(7){
+            @include xl{
+                grid-area: seven;
+            }
+        }
+
+    }
+
+}

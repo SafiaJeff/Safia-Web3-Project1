@@ -1,0 +1,387 @@
+/* =============
+    Index Content
+============= */
+
+
+
+//-------hero---------//
+#index-hero {
+    #index-hero-container {
+        background-image: url('../img/Index/clayhero.jpg');
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+
+        @include lg {
+            height: 700px;
+        }
+
+        text-align: center;
+
+
+        #title-scribble {
+            img {
+                display: inline;
+                text-align: center;
+                padding-top: 50px;
+                height: 220px;
+            }
+
+            h1 {
+                font-size: rem-calc(50);
+                color: $orange;
+            }
+
+            h1,
+            p {
+                position: relative;
+                top: 200px;
+
+            }
+        }
+
+
+    }
+}
+
+//*-----------about us---------*//
+#index-about-mobile-images {
+    background-color: $pale-cream;
+    padding-top: 30px;
+    position: relative;
+
+    #ray-scribble-mobile {
+        @include md {
+            display: none;
+        }
+
+        position: absolute;
+        left: 135px;
+        top: 25px;
+    }
+
+    #index-mobile-oranges {
+        background-image: url('../img/Index/oranges.png');
+        background-position: center;
+        background-size: cover;
+        height: 360px;
+        background-repeat: no-repeat;
+        background-position-x: 70px;
+
+        @include md {
+            display: none;
+        }
+    }
+}
+
+#index-about-us {
+
+    // @include lg{
+    //     display: grid;
+    //     grid-template-columns: auto 800px auto;
+    //     grid-template-areas: ". index-about-grid .";
+
+    // }
+
+    background-color: $pale-cream;
+    padding-top: 0px;
+
+    div {
+        // @include lg{
+        //     grid-area: index-about-grid;
+        // }
+
+        #index-about-top {
+
+            @include md {
+                display: grid;
+                grid-template-columns: 15% 44% auto;
+                // border: solid 1px red;
+                padding-bottom: 60px;
+            }
+
+            @include lg {
+                grid-template-columns: 20% 40% auto;
+            }
+
+            article {
+                p {
+                    padding-bottom: 30px;
+                }
+
+                @include md {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    z-index: 1;
+                    padding-bottom: 40px;
+                    // border: solid 1px green;
+                }
+            }
+
+            #blue-mug {
+                @include md {
+                    margin-left: -150px;
+                }
+            }
+
+            #ray-scribble {
+
+                @include md {
+                    padding-top: 50px;
+                    margin-left: 40px;
+                    // border: solid 1px blue;
+                }
+
+                @include lg {
+                    // margin-left: -10px;
+                    padding-right: 10px;
+                    padding-top: 60px;
+
+
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+
+                }
+            }
+        }
+
+        #index-about-middle {
+
+            @include md {
+                display: grid;
+                grid-template-columns: 50% auto;
+            }
+
+            @include lg {
+                grid-template-columns: 60% auto;
+            }
+
+            article:nth-child(1) {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    margin-left: 40%;
+
+                    @include md {
+                        margin-left: -60%;
+                        width: 160%;
+                        margin-top: 30px;
+                    }
+
+                    @include lg {
+                        width: 95%;
+                        margin-left: 0%;
+                        // margin-right: -20px;
+                        padding-left: 60px;
+                    }
+                }
+            }
+
+            article:nth-child(2) {
+                overflow: hidden;
+
+                @include lg {
+                    padding-top: 270px;
+                }
+
+                p {
+                    margin-bottom: 20px;
+
+                    @include md {
+                        padding-right: 25%;
+                        margin-top: 0px;
+                    }
+
+                    @include lg {
+                        margin-bottom: 0px;
+                        padding-right: 30%;
+                        margin-left: -10px;
+                    }
+                }
+
+                img {
+                    @include md {
+                        width: 110%;
+                        margin-left: 20px;
+                        padding-top: 20px;
+                    }
+
+                    @include lg {
+                        width: 89%;
+                        margin-left: 100px;
+                        padding-top: 0px;
+
+                    }
+                }
+            }
+
+        }
+
+        #index-about-bottom {
+            @include md {
+                display: grid;
+                grid-template-columns: 50% auto;
+                // grid-template-areas: bottomtext whitebowl;
+
+                // border: solid 1px red;
+            }
+
+            @include lg {
+                grid-template-columns: 40% auto;
+            }
+
+            section {
+                p {
+                    @include md {
+                        padding-top: 120px;
+                        padding-left: 30px;
+                    }
+
+                    @include lg {
+                        // z-index: 10;
+                        // margin-right: -80px;
+                        padding-left: 40%;
+                    }
+                }
+            }
+
+            #white-bowl {
+                overflow: hidden;
+                div {
+                    background-image: url('../img/Index/whitebowl.png');
+                    height: 300px;
+                    background-position: 35px 0px;
+
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    
+
+                    @include md {
+
+                        margin-right: -150px;
+
+                        // width: 120%;
+                        // height: 140%;
+                    }
+
+                    @include lg {
+                        height: 400px;
+                        margin-left: -400px;
+                        // width: 100%;
+                    }
+                }
+
+
+
+
+            }
+        }
+
+
+    }
+}
+
+//-------pull quote---------//
+#index-pull-quote {
+    background-color: $light-blue;
+
+    @include lg {
+        padding: 60px;
+    }
+
+    div {
+        h1 {
+            text-align: center;
+            position: relative;
+
+        }
+    }
+
+}
+
+#sline {
+    text-align: center;
+    margin-top: -50px;
+
+    @include md {
+        margin-top: -75px;
+    }
+
+    @include lg {
+        margin-top: -130px;
+    }
+
+    img {
+        width: 30%;
+
+        @include md {
+            width: 20%;
+        }
+    }
+}
+
+//-------visit us---------//
+#index-visit-us {
+    div {
+        // display: grid;
+        // grid-template-rows: repeat(2, 1fr);
+
+        @include md {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 300px;
+            grid-template-areas: "visit map";
+
+        }
+
+        // @include lg{
+        //     grid-template-rows: 450px;
+        //     grid-template-columns: 350px auto;
+        // }
+
+
+        article:nth-child(1) {
+
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding-bottom: 30px;
+
+            #address {
+                padding-bottom: 15px;
+            }
+
+            @include md {
+                grid-area: visit;
+                padding-bottom: 0px;
+                margin: auto;
+                text-align: left;
+
+            }
+
+            // @include lg{
+            //     padding: 90px;
+            //     padding-right: 10px;
+            // }
+
+        }
+
+        #index-map {
+            background-image: url('../img/Index/map-placeholder.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 300px;
+
+            @include md {
+                grid-area: map;
+                // height: 600px;
+            }
+
+        }
+
+
+    }
+}

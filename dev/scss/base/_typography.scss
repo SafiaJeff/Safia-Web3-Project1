@@ -1,9 +1,97 @@
 /* =============
     Typography
 ============= */
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Raleway', sans-serif;
 
+// font-family: 'Caveat', cursive;
+// font-family: 'Padauk', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+h1{
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    color: $navy;
+    font-size: rem-calc(40);
+
+    @include lg{
+        font-size: rem-calc(48);
+    }
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: $orange;
+    font-size: rem-calc(25);
+
+    @include lg{
+        font-size: rem-calc(40);
+    }
+}
+
+.index-h2-p{
+    //text styles for text in index
+    p{
+        font-size: rem-calc(16);
+        line-height: rem-calc(25);
+        font-family: 'Padauk', sans-serif;
+        font-weight: 400;
+        color: $black;
+
+        padding-right: 80px;
+
+        @include md{
+            padding: 0px;
+            font-size: rem-calc(18);
+            line-height: rem-calc(28);
+        }
+
+        @include lg{
+            font-size: rem-calc(20);
+
+        }
+    }
+
+    h2{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: $orange;
+        font-size: rem-calc(35);
+
+        padding-bottom: 20px;
+
+        @include md{
+            padding-bottom: 15px;
+        }
+
+        @include lg{
+            font-size: rem-calc(45);
+        }
+    }
+}
+
+h3{
+    font-family: 'Padauk', sans-serif;
+    font-weight: 700;
+    color: $navy;
+    font-size: rem-calc(20);
+
+    @include lg{
+        // font-size: rem-calc(40);
+    }
+}
+
+p{
+    font-family: 'Padauk', sans-serif;
+    font-weight: 400;
+    color: $black;
+    font-size: rem-calc(16);
+    line-height: rem-calc(25);
+
+    @include lg{
+        font-size: rem-calc(18);
+        line-height: rem-calc(28);
+    } 
+}
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -21,4 +109,13 @@ p{
 
 .section-title{
     font-weight: 300;
+}
+
+#logo-container{
+    p{
+        font-family: 'Caveat', cursive;
+        font-size: rem-calc(20);
+        font-weight: 700;
+        color: $navy;
+    }
 }

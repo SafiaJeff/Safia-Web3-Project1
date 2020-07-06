@@ -411,6 +411,41 @@ a:link, a:visited {
   grid-area: container;
 }
 
+.grid-container-header {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". container .";
+}
+@media (min-width: 768px) {
+  .grid-container-header {
+    grid-template-columns: 30px auto 30px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-container-header {
+    grid-template-columns: 35px auto 35px;
+  }
+}
+@media (min-width: 1440px) {
+  .grid-container-header {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+.grid-container-header > div {
+  grid-area: container;
+}
+
+@media (min-width: 1440px) {
+  .grid-container-lg {
+    grid-template-columns: auto 1440px auto;
+    display: grid;
+    grid-template-areas: ". container .";
+  }
+}
+.grid-container-lg > div {
+  grid-area: container;
+}
+
 .content-spacing {
   padding: 30px 0px;
 }
@@ -598,14 +633,47 @@ header div {
   grid-template-columns: repeat(2, 1fr);
 }
 header div #logo-container {
-  padding: 10px 0px;
+  padding: 15px 0px;
+}
+@media (min-width: 768px) {
+  header div #logo-container {
+    padding: 25px 0px;
+  }
+}
+@media (min-width: 768px) {
+  header div #logo-container {
+    padding: 35px 0px;
+  }
+}
+header div #logo-container p {
+  font-size: 1.625rem;
+}
+@media (min-width: 768px) {
+  header div #logo-container p {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1025px) {
+  header div #logo-container p {
+    font-size: 2.5rem;
+  }
 }
 header div #burger-container {
-  font-size: 1.25rem;
+  font-size: 1.4375rem;
   color: #55BF9E;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+@media (min-width: 768px) {
+  header div #burger-container {
+    font-size: 1.5625rem;
+  }
+}
+@media (min-width: 1025px) {
+  header div #burger-container {
+    font-size: 1.875rem;
+  }
 }
 
 /* =============
@@ -619,6 +687,13 @@ footer {
 footer > div {
   position: relative;
 }
+@media (min-width: 768px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "glazetitle location";
+  }
+}
 footer > div section {
   position: relative;
   z-index: 20;
@@ -630,27 +705,37 @@ footer > div section h1 {
   color: #fff;
   z-index: 1;
 }
-footer > div section p {
+@media (min-width: 768px) {
+  footer > div section h1 {
+    grid-area: glazetitle;
+  }
+}
+@media (min-width: 768px) {
+  footer > div section article {
+    grid-area: location;
+  }
+}
+footer > div section article p {
   font-family: "Padauk", sans-serif;
   font-size: 1rem;
   line-height: 1.375rem;
   color: #fff;
 }
-footer > div section ul {
+footer > div section article ul {
   display: flex;
   justify-content: center;
   padding: 15px 0px;
 }
-footer > div section ul li {
+footer > div section article ul li {
   margin: 0px 10px;
 }
-footer > div section ul li a:link,
-footer > div section ul li a:visited {
+footer > div section article ul li a:link,
+footer > div section article ul li a:visited {
   color: #fff;
 }
-footer > div section ul li a:link:hover, footer > div section ul li a:link:active,
-footer > div section ul li a:visited:hover,
-footer > div section ul li a:visited:active {
+footer > div section article ul li a:link:hover, footer > div section article ul li a:link:active,
+footer > div section article ul li a:visited:hover,
+footer > div section article ul li a:visited:active {
   color: #9CAFB7;
 }
 footer > div #footer-scribble {
@@ -817,6 +902,11 @@ footer > div #footer-scribble {
     padding-left: 60px;
   }
 }
+@media (min-width: 1025px) {
+  #index-about-us div #index-about-middle article:nth-child(1) img {
+    width: 80%;
+  }
+}
 #index-about-us div #index-about-middle article:nth-child(2) {
   overflow: hidden;
 }
@@ -841,6 +931,12 @@ footer > div #footer-scribble {
     margin-left: -10px;
   }
 }
+@media (min-width: 1440px) {
+  #index-about-us div #index-about-middle article:nth-child(2) p {
+    padding-right: 1000px;
+    margin-left: 0px;
+  }
+}
 @media (min-width: 768px) {
   #index-about-us div #index-about-middle article:nth-child(2) img {
     width: 110%;
@@ -853,6 +949,12 @@ footer > div #footer-scribble {
     width: 89%;
     margin-left: 100px;
     padding-top: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  #index-about-us div #index-about-middle article:nth-child(2) img {
+    width: 40%;
+    padding-top: 50px;
   }
 }
 @media (min-width: 768px) {
@@ -877,8 +979,15 @@ footer > div #footer-scribble {
     padding-left: 40%;
   }
 }
-#index-about-us div #index-about-bottom #white-bowl {
-  overflow: hidden;
+@media (min-width: 768px) {
+  #index-about-us div #index-about-bottom #white-bowl {
+    overflow: hidden;
+  }
+}
+@media (min-width: 1025px) {
+  #index-about-us div #index-about-bottom #white-bowl {
+    overflow: visible;
+  }
 }
 #index-about-us div #index-about-bottom #white-bowl div {
   background-image: url("../img/Index/whitebowl.png");
@@ -895,7 +1004,8 @@ footer > div #footer-scribble {
 @media (min-width: 1025px) {
   #index-about-us div #index-about-bottom #white-bowl div {
     height: 400px;
-    margin-left: -400px;
+    margin-left: -300px;
+    overflow: visible;
   }
 }
 
@@ -926,6 +1036,11 @@ footer > div #footer-scribble {
     margin-top: -130px;
   }
 }
+@media (min-width: 1025px) {
+  #sline {
+    margin-top: -135px;
+  }
+}
 #sline img {
   width: 30%;
 }
@@ -934,13 +1049,29 @@ footer > div #footer-scribble {
     width: 20%;
   }
 }
+@media (min-width: 1440px) {
+  #sline img {
+    width: 15%;
+  }
+}
 
+@media (min-width: 1025px) {
+  #index-visit-us {
+    padding-top: 80px;
+  }
+}
 @media (min-width: 768px) {
   #index-visit-us div {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 300px;
     grid-template-areas: "visit map";
+  }
+}
+@media (min-width: 1025px) {
+  #index-visit-us div {
+    grid-template-columns: 30% auto;
+    grid-template-rows: 450px;
   }
 }
 #index-visit-us div article:nth-child(1) {
@@ -969,6 +1100,12 @@ footer > div #footer-scribble {
 @media (min-width: 768px) {
   #index-visit-us div #index-map {
     grid-area: map;
+  }
+}
+@media (min-width: 768px) {
+  #index-visit-us div #index-map {
+    grid-area: map;
+    height: 100%;
   }
 }
 

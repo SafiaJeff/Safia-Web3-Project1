@@ -3,21 +3,49 @@
 ============= */
 
 header{
+    // border-bottom: solid 1px red;
     div{
-
         display: grid;
         grid-template-columns: repeat(2,1fr);
 
         #logo-container{
-            padding: 10px 0px;
+            padding: 15px 0px;
+
+            @include md{
+                padding: 25px 0px;
+            }
+            
+            @include md{
+                padding: 35px 0px;
+            }
+
+            p{
+                font-size: rem-calc(26);
+
+                @include md{
+                    font-size: rem-calc(30);
+                }
+
+                @include lg{
+                    font-size: rem-calc(40);
+                }
+            }
         }
 
         #burger-container{
-            font-size: rem-calc(20);
+            font-size: rem-calc(23);
             color: $green;
             display: flex;
             justify-content: flex-end;
             align-items: center;
+
+            @include md{
+                font-size: rem-calc(25);
+            }
+
+            @include lg{
+                font-size: rem-calc(30);
+            }
         }
     }
 }

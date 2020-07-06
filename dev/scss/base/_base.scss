@@ -49,6 +49,28 @@ a:link, a:visited{
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". container .";
 
+    @include xl{
+        grid-template-columns: auto 1440px auto;
+    }
+
+    >div{
+        grid-area: container;
+    }
+}
+
+.grid-container-header{
+    //padding for responsive sizes
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". container .";
+    
+    @include md{
+        grid-template-columns: 30px auto 30px;
+    }
+
+    @include md{
+        grid-template-columns: 35px auto 35px;
+    }
 
     @include xl{
         grid-template-columns: auto 1440px auto;
@@ -59,18 +81,18 @@ a:link, a:visited{
     }
 }
 
-// .grid-container-lg{
-//     @include xl{
-//         grid-template-columns: auto 1440px auto;
-//         display: grid;
+.grid-container-lg{
+    @include xl{
+        grid-template-columns: auto 1440px auto;
+        display: grid;
   
-//     grid-template-areas: ". container .";
-//     }
+        grid-template-areas: ". container .";
+    }
 
-//     >div{
-//         grid-area: container;
-//     }
-// }
+    >div{
+        grid-area: container;
+    }
+}
 
 
 

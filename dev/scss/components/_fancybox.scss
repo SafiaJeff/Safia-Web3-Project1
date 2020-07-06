@@ -1,0 +1,23 @@
+.fancybox-button, .fancybox-button:link, .fancybox-button:visited {
+    color: $green;
+}
+
+.fancybox-caption, .fancybox-infobar, .fancybox-navigation .fancybox-button, .fancybox-toolbar {
+    opacity: 1;
+    
+    visibility: initial;
+
+}
+
+.fancybox-button {
+    background: $navy;
+
+}
+
+.fancybox-thumbs__list a:before {
+    border: 6px solid rgb(157, 230, 207);
+}
+
+.fancybox-thumbs {
+    background: #9CAFB7;
+}

@@ -569,6 +569,27 @@ textarea {
 /* =============
     Navigation
 ============= */
+.fancybox-button, .fancybox-button:link, .fancybox-button:visited {
+  color: #55BF9E;
+}
+
+.fancybox-caption, .fancybox-infobar, .fancybox-navigation .fancybox-button, .fancybox-toolbar {
+  opacity: 1;
+  visibility: initial;
+}
+
+.fancybox-button {
+  background: #1B4965;
+}
+
+.fancybox-thumbs__list a:before {
+  border: 6px solid #9de6cf;
+}
+
+.fancybox-thumbs {
+  background: #9CAFB7;
+}
+
 /* =============
     Header
 ============= */

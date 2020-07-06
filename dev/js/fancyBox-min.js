@@ -1,0 +1,1 @@
+console.log("fancy box is working");

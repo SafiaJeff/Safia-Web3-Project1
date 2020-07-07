@@ -5,44 +5,20 @@
 
 
 //-------hero---------//
-#index-hero {
-    #index-hero-container {
+
+    #index-hero{
         background-image: url('../img/Index/clayhero.jpg');
         height: 500px;
         background-position: center;
         background-size: cover;
+        text-align: center;
 
         @include lg {
             height: 700px;
         }
 
-        text-align: center;
-
-
-        #title-scribble {
-            img {
-                display: inline;
-                text-align: center;
-                padding-top: 50px;
-                height: 220px;
-            }
-
-            h1 {
-                font-size: rem-calc(50);
-                color: $orange;
-            }
-
-            h1,
-            p {
-                position: relative;
-                top: 200px;
-
-            }
-        }
-
-
     }
-}
+
 
 //*-----------about us---------*//
 #index-about-mobile-images {
@@ -266,6 +242,7 @@
                         // margin-right: -80px;
                         padding-left: 40%;
                         // z-index: 1;
+                        // overflow: visible;
                     }
                 }
             }

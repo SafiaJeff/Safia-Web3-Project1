@@ -365,7 +365,8 @@ ul li {
   list-style: none;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   transition: 0.25s;
 }
@@ -470,6 +471,31 @@ a:link, a:visited {
   }
 }
 
+.hero-scribble {
+  display: inline;
+  text-align: center;
+  padding-top: 50px;
+  height: 220px;
+}
+@media (min-width: 1025px) {
+  .hero-scribble {
+    height: 320px;
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+}
+
+.hero-scribble-2 {
+  display: inline;
+  text-align: center;
+  height: 150px;
+}
+@media (min-width: 1025px) {
+  .hero-scribble-2 {
+    height: 270px;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -559,7 +585,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -578,6 +607,30 @@ p {
   font-size: 1.25rem;
   font-weight: 700;
   color: #1B4965;
+}
+
+.hero-h1 {
+  font-size: 3.125rem;
+  color: #EA8652;
+  position: relative;
+  top: 200px;
+}
+@media (min-width: 1025px) {
+  .hero-h1 {
+    font-size: 5rem;
+    top: 280px;
+  }
+}
+
+.hero-subtext {
+  position: relative;
+  top: 200px;
+}
+@media (min-width: 1025px) {
+  .hero-subtext {
+    font-size: 1.25rem;
+    top: 280px;
+  }
 }
 
 /* =============
@@ -711,31 +764,31 @@ footer > div section h1 {
   }
 }
 @media (min-width: 768px) {
-  footer > div section article {
+  footer > div section #footer-info {
     grid-area: location;
   }
 }
-footer > div section article p {
+footer > div section #footer-info p {
   font-family: "Padauk", sans-serif;
   font-size: 1rem;
   line-height: 1.375rem;
   color: #fff;
 }
-footer > div section article ul {
+footer > div section #footer-info ul {
   display: flex;
   justify-content: center;
   padding: 15px 0px;
 }
-footer > div section article ul li {
+footer > div section #footer-info ul li {
   margin: 0px 10px;
 }
-footer > div section article ul li a:link,
-footer > div section article ul li a:visited {
+footer > div section #footer-info ul li a:link,
+footer > div section #footer-info ul li a:visited {
   color: #fff;
 }
-footer > div section article ul li a:link:hover, footer > div section article ul li a:link:active,
-footer > div section article ul li a:visited:hover,
-footer > div section article ul li a:visited:active {
+footer > div section #footer-info ul li a:link:hover, footer > div section #footer-info ul li a:link:active,
+footer > div section #footer-info ul li a:visited:hover,
+footer > div section #footer-info ul li a:visited:active {
   color: #9CAFB7;
 }
 footer > div #footer-scribble {
@@ -765,7 +818,7 @@ footer > div #footer-scribble {
 /* =============
     Index Content
 ============= */
-#index-hero #index-hero-container {
+#index-hero {
   background-image: url("../img/Index/clayhero.jpg");
   height: 500px;
   background-position: center;
@@ -773,24 +826,9 @@ footer > div #footer-scribble {
   text-align: center;
 }
 @media (min-width: 1025px) {
-  #index-hero #index-hero-container {
+  #index-hero {
     height: 700px;
   }
-}
-#index-hero #index-hero-container #title-scribble img {
-  display: inline;
-  text-align: center;
-  padding-top: 50px;
-  height: 220px;
-}
-#index-hero #index-hero-container #title-scribble h1 {
-  font-size: 3.125rem;
-  color: #EA8652;
-}
-#index-hero #index-hero-container #title-scribble h1,
-#index-hero #index-hero-container #title-scribble p {
-  position: relative;
-  top: 200px;
 }
 
 #index-about-mobile-images {
@@ -1112,6 +1150,50 @@ footer > div #footer-scribble {
 /* =============
     Gallery Content
 ============= */
+#gallery-header {
+  background-color: #1B4965;
+}
+#gallery-header #gallery-title-scribble {
+  text-align: center;
+}
+#gallery-header #gallery-title-scribble h1 {
+  color: #1B4965;
+  position: relative;
+  top: 100px;
+}
+@media (min-width: 1025px) {
+  #gallery-header #gallery-title-scribble h1 {
+    top: 150px;
+  }
+}
+#gallery-header #gallery-title-scribble #gallery-title-scribble {
+  padding-bottom: 60px;
+}
+@media (min-width: 1025px) {
+  #gallery-header #gallery-title-scribble #gallery-title-scribble {
+    height: 220px;
+  }
+}
+#gallery-header #gallery-title-scribble #gallery-bg-scribble {
+  height: 200px;
+  object-fit: cover;
+  object-position: 0px -50px;
+  position: absolute;
+  text-align: center;
+  width: 300px;
+}
+@media (min-width: 1025px) {
+  #gallery-header #gallery-title-scribble #gallery-bg-scribble {
+    height: 100%;
+    margin-left: -700px;
+    margin-top: -30px;
+    object-fit: none;
+    object-position: 0px 0px;
+    position: absolute;
+    width: 100%;
+  }
+}
+
 #gallery-gallery ul {
   display: grid;
   gap: 20px;
@@ -1119,31 +1201,23 @@ footer > div #footer-scribble {
 }
 @media (min-width: 768px) {
   #gallery-gallery ul {
-    grid-template-rows: 330px 350px 225px;
-    grid-template-columns: auto 60%;
-    grid-template-areas: "one two" "one three" "four four";
     gap: 15px;
+    grid-template-areas: "one two" "one three" "four four";
+    grid-template-columns: auto 60%;
+    grid-template-rows: 330px 350px 225px;
   }
 }
 @media (min-width: 1025px) {
   #gallery-gallery ul {
-    grid-template-rows: 410px auto 305px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: "one one one one one two two two two two two two" "three three three three five five five five six six six six" "four four four four five five five five six six six six";
     gap: 20px;
-  }
-}
-@media (min-width: 1440px) {
-  #gallery-gallery ul {
-    grid-template-columns: 350px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 410px 550px 630px;
-    gap: 20px 20px;
-    grid-template-areas: "one one one two two two two two" "seven seven seven seven seven seven seven seven" "three three five five five six six six" "four four five five five six six six";
+    grid-template-areas: "one one one one one two two two two two two two" "three three three three five five five five six six six six" "four four four four five five five five six six six six";
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 410px auto 305px;
   }
 }
 #gallery-gallery ul li img {
-  object-fit: cover;
   height: 100%;
+  object-fit: cover;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -1179,5 +1253,28 @@ footer > div #footer-scribble {
 @media (min-width: 1440px) {
   #gallery-gallery ul li:nth-child(7) {
     grid-area: seven;
+  }
+}
+
+#classes-hero {
+  background-image: url("../img/Classes/classhero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  #classes-hero {
+    height: 700px;
+  }
+}
+#classes-hero .hero-scribble {
+  padding-top: 105px;
+  height: 120px;
+}
+@media (min-width: 1025px) {
+  #classes-hero .hero-scribble {
+    height: 150px;
+    padding-top: 165px;
   }
 }

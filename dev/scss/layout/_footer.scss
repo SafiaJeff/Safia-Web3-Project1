@@ -40,9 +40,9 @@ footer {
 
             }
 
-            article {
+            #footer-info {
                 @include md{
-                    grid-area: location
+                    grid-area: location;
                 }
 
                 p {
@@ -50,17 +50,13 @@ footer {
                     font-size: rem-calc(16);
                     line-height: rem-calc(22);
                     color: $white;
-                    //z-index: 1;
-
-
-
+                    
                 }
 
                 ul {
                     display: flex;
                     justify-content: center;
                     padding: 15px 0px;
-                    
 
                     li {
                         margin: 0px 10px;

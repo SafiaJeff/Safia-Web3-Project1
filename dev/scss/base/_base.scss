@@ -1,133 +1,161 @@
 /* =============
     Base
 ============= */
-figure{
+figure {
     padding: 0;
     margin: 0;
 }
 
-ul{
+ul {
     padding: 0;
     margin: 0;
-    li{
+
+    li {
         list-style: none;
     }
 }
 
-a:link, a:visited{
+a:link,
+a:visited {
     text-decoration: none;
     transition: 0.25s;
 }
 
-.show-for-md{
+.show-for-md {
     display: none;
 
-    @include md{
-        display: block;
-    }
-} 
-
-.show-for-lg{
-    display: none;
-
-    @include lg{
+    @include md {
         display: block;
     }
 }
 
-.show-for-xl{
+.show-for-lg {
     display: none;
 
-    @include xl{
+    @include lg {
         display: block;
     }
 }
 
-.grid-container{
+.show-for-xl {
+    display: none;
+
+    @include xl {
+        display: block;
+    }
+}
+
+.grid-container {
     //padding for responsive sizes
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". container .";
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1440px auto;
     }
 
-    >div{
+    >div {
         grid-area: container;
     }
 }
 
-.grid-container-header{
+.grid-container-header {
     //padding for responsive sizes
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". container .";
-    
-    @include md{
+
+    @include md {
         grid-template-columns: 30px auto 30px;
     }
 
-    @include md{
+    @include md {
         grid-template-columns: 35px auto 35px;
     }
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1440px auto;
     }
 
-    >div{
+    >div {
         grid-area: container;
     }
 }
 
-.grid-container-lg{
-    @include xl{
+.grid-container-lg {
+    @include xl {
         grid-template-columns: auto 1440px auto;
         display: grid;
-  
+
         grid-template-areas: ". container .";
     }
 
-    >div{
+    >div {
         grid-area: container;
     }
 }
 
 
 
-.content-spacing{
+.content-spacing {
     //padding above/below sections
     padding: 30px 0px;
 
-    @include lg{
+    @include lg {
         padding: 90px 0px;
     }
-    
+
 }
 
 
 
-.subhead-spacing{
-    h1{
+.subhead-spacing {
+    h1 {
         padding-bottom: 20px;
     }
 
-    h2{
+    h2 {
         padding-bottom: 10px;
     }
 
 
-    @include lg{
-        h1{
+    @include lg {
+        h1 {
             padding-bottom: 30px;
         }
-    
-        h2{
+
+        h2 {
             padding-bottom: 30px;
         }
 
     }
-    
-    
+
+
 }
+
+.hero-scribble{
+    display: inline;
+    text-align: center;
+    padding-top: 50px;
+    height: 220px;
+
+    @include lg {
+        height: 320px;
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+}
+
+.hero-scribble-2{
+    display: inline;
+    text-align: center;
+    // padding-top: 50px;
+    height: 150px;
+
+    @include lg {
+        height: 270px;
+        // padding-top: 90px;
+    }
+}
+

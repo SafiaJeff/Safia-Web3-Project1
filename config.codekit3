@@ -9,6 +9,22 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"/deploy/classes-content.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/classes-content.html",
+		"oF": 0
+		},
+	"/deploy/classes.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/classes.html",
+		"oF": 0
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -27,130 +43,56 @@
 		"oAP": "/deploy/gallery.html",
 		"oF": 0
 		},
-	"/deploy/img/Classes/og/andy-kelly-P21tYLUo_PI-unsplash.jpg": {
-		"ft": 16384,
-		"iS": 7623970,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Classes/og/andy-kelly-P21tYLUo_PI-unsplash.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Classes/og/angele-kamp-IJZY2yXYsp8-unsplash.jpg": {
-		"ft": 16384,
-		"iS": 9489243,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Classes/og/angele-kamp-IJZY2yXYsp8-unsplash.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Classes/og/class-02": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Classes/og/class-02",
-		"oF": 0
-		},
-	"/deploy/img/Classes/og/jessica-ruscello-G8vPQ-XVxxY-unsplash.jpg": {
-		"ft": 16384,
-		"iS": 8706408,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Classes/og/jessica-ruscello-G8vPQ-XVxxY-unsplash.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Classes/resized/bowlsbirdseye.jpg": {
-		"ft": 16384,
-		"iS": 106491,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Classes/resized/bowlsbirdseye.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Classes/resized/classhero.jpg": {
-		"ft": 16384,
-		"iS": 131817,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Classes/resized/classhero.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Classes/resized/redcarve.jpg": {
-		"ft": 16384,
-		"iS": 64917,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Classes/resized/redcarve.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Classes/resized/stackedvase.jpg": {
-		"ft": 16384,
-		"iS": 62434,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Classes/resized/stackedvase.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Classes/tinified (9)/bowlsbirdseye.jpg": {
+	"/deploy/img/Classes/bowlsbirdseye.jpg": {
 		"ft": 16384,
 		"iS": 87833,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Classes/tinified (9)/bowlsbirdseye.jpg",
+		"oAP": "/deploy/img/Classes/bowlsbirdseye.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/Classes/tinified (9)/classhero.jpg": {
+	"/deploy/img/Classes/class-scribble.png": {
+		"ft": 32768,
+		"iS": 13428,
+		"oA": 0,
+		"oAP": "/deploy/img/Classes/class-scribble.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Classes/classhero.jpg": {
 		"ft": 16384,
 		"iS": 88477,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Classes/tinified (9)/classhero.jpg",
+		"oAP": "/deploy/img/Classes/classhero.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/Classes/tinified (9)/redcarve.jpg": {
+	"/deploy/img/Classes/redcarve.jpg": {
 		"ft": 16384,
 		"iS": 47261,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Classes/tinified (9)/redcarve.jpg",
+		"oAP": "/deploy/img/Classes/redcarve.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/Classes/tinified (9)/stackedvase.jpg": {
+	"/deploy/img/Classes/stackedvase.jpg": {
 		"ft": 16384,
 		"iS": 39869,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Classes/tinified (9)/stackedvase.jpg",
+		"oAP": "/deploy/img/Classes/stackedvase.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -259,6 +201,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/Gallery/gallery-scribble.png": {
+		"ft": 32768,
+		"iS": 8048,
+		"oA": 0,
+		"oAP": "/deploy/img/Gallery/gallery-scribble.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/Gallery/holdingbowlhands.jpg": {
 		"ft": 16384,
 		"iS": 32163,
@@ -312,6 +265,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Gallery/yellow-scribbles.png": {
+		"ft": 32768,
+		"iS": 16667,
+		"oA": 0,
+		"oAP": "/deploy/img/Gallery/yellow-scribbles.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/Index/about-ray-scribble.svg": {
@@ -434,8 +398,8 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/classes.html",
-		"oF": 0
+		"oAP": "/deploy/classes.html",
+		"oF": 2
 		},
 	"/dev/contact.kit": {
 		"cB": 0,
@@ -449,9 +413,9 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/content/classes-content.html",
-		"oF": 0
+		"oA": 1,
+		"oAP": "/deploy/classes-content.html",
+		"oF": 2
 		},
 	"/dev/content/contact-content.kit": {
 		"cB": 0,
@@ -483,14 +447,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/dev/content/instagram-content.html",
-		"oF": 0
-		},
-	"/dev/gallery.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/gallery.html",
 		"oF": 0
 		},
 	"/dev/gallery.kit": {
@@ -549,17 +505,6 @@
 		"oAP": "/dev/instagram.html",
 		"oF": 0
 		},
-	"/dev/js/fancyBox-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/fancyBox-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/dev/js/fancyBox.js": {
 		"bF": 0,
 		"ft": 64,
@@ -579,6 +524,17 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/tinySlider.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/tinySlider-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -721,6 +677,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_classes-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_classes-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

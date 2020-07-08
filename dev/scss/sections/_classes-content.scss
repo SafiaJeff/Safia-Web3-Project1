@@ -1,21 +1,76 @@
+/* =============
+    Classes Content
+============= */
 #classes-hero {
-    background-image: url('../img/Classes/classhero.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    text-align: center;
-
-    @include lg {
-        height: 700px;
-    }
-
-    .hero-scribble {
-        padding-top: 105px;
-        height: 120px;
-    
-        @include lg {
-            height: 150px;
-            padding-top: 165px;
-        }
-    }
+	background-image: url('../img/Classes/classhero.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+	text-align: center;
+	@include lg {
+		height: 700px;
+	}
+	h1 {
+		color: $navy;
+	}
+	.hero-scribble {
+		height: 120px;
+		padding-top: 105px;
+		@include lg {
+			height: 160px;
+			padding-right: 15px;
+			padding-top: 155px;
+		}
+	}
+}
+/* =================
+     Times Info
+==================== */
+#classes-times {
+	padding-top: 0px;
+	>div {
+		@include md {
+			grid-template-areas: "classtext classtime";
+			grid-template-columns: 50% auto;
+		}
+		article:nth-child(1) {
+			background-color: $pale-cream;
+			@include md {
+				grid-area: classtext;
+			}
+		}
+		article:nth-child(2) {
+			padding-bottom: 0px;
+			@include md {
+				grid-area: classtime;
+			}
+			div {
+				text-align: center;
+			}
+		}
+	}
+}
+/* =================
+     Carousel
+==================== */
+#classes-carousel {
+	>div {
+		.my-slider {
+			div {
+				height: 200px;
+				@include md {
+					height: 300px;
+				}
+				@include lg {
+					height: 460px;
+				}
+				img {
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					width: 100%;
+				}
+			}
+		}
+	}
 }

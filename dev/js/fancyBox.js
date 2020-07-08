@@ -1,4 +1,4 @@
-// console.log("fancy box is working");
+console.log("fancy box is working");
 
 $('[data-fancybox="gallery"]').fancybox({
 	buttons: [

@@ -2,10 +2,6 @@
     Index Content
 ============= */
 
-
-
-//-------hero---------//
-
     #index-hero{
         background-image: url('../img/Index/clayhero.jpg');
         height: 500px;
@@ -20,7 +16,10 @@
     }
 
 
-//*-----------about us---------*//
+/* =================
+      About Us
+==================== */
+
 #index-about-mobile-images {
     background-color: $pale-cream;
     padding-top: 30px;
@@ -291,8 +290,9 @@
 
     }
 }
-
-//-------pull quote---------//
+/* =================
+     Pull Quote
+==================== */
 #index-pull-quote {
     background-color: $light-blue;
 
@@ -339,7 +339,9 @@
     }
 }
 
-//-------visit us---------//
+/* =================
+      Visit Us
+==================== */
 #index-visit-us {
     @include lg{
         padding-top: 80px;

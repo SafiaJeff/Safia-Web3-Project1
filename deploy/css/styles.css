@@ -678,6 +678,109 @@ textarea {
   background: #9CAFB7;
 }
 
+.tns-controls {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tns-controls [aria-controls] {
+  font-size: 15px;
+  margin: 0 5px;
+  padding: 0 1em;
+  height: 2.5em;
+  color: #000;
+  background: #9DE6CF;
+  border-radius: 3px;
+  border: 0;
+}
+
+.lt-ie9 .tns-controls > [aria-controls] {
+  line-height: 2.5em;
+}
+
+[data-action] {
+  display: block;
+  margin: 10px auto;
+  font-size: 17px;
+  min-width: 3em;
+  text-align: center;
+  background: transparent;
+  border: 0;
+}
+
+.tns-controls [disabled] {
+  color: #999999;
+  background: #B3B3B3;
+  cursor: not-allowed !important;
+}
+
+.tns-nav {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.tns-nav > [aria-controls] {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ddd;
+  border: 0;
+}
+
+.tns-nav > .tns-nav-active {
+  background: #999;
+}
+
+.playbutton-wrapper {
+  text-align: center;
+}
+
+.playbutton-wrapper button {
+  height: 34px;
+  padding: 0 10px;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.wrapper {
+  padding: 0 5em;
+}
+
+.suite-container .title,
+.suite-container .subtitle,
+.suite-container li {
+  padding: 5px 10px;
+}
+
+.suite-container li {
+  font-size: 12px;
+  line-height: 1.4;
+  background: #f5f5f5;
+}
+
+.suite-container .title {
+  font-size: 14px;
+  font-weight: bold;
+  background: #8acac6;
+  text-transform: capitalize;
+}
+
+.suite-container .subtitle {
+  font-size: 13px;
+  font-weight: bold;
+  background: #dedede;
+  text-transform: capitalize;
+}
+
+.suite-container .fail {
+  background: #FFADE2;
+}
+
 /* =============
     Header
 ============= */
@@ -831,6 +934,9 @@ footer > div #footer-scribble {
   }
 }
 
+/* =================
+      About Us
+==================== */
 #index-about-mobile-images {
   background-color: #FFF2DA;
   padding-top: 30px;
@@ -1047,6 +1153,9 @@ footer > div #footer-scribble {
   }
 }
 
+/* =================
+     Pull Quote
+==================== */
 #index-pull-quote {
   background-color: #98C1D9;
 }
@@ -1093,6 +1202,9 @@ footer > div #footer-scribble {
   }
 }
 
+/* =================
+      Visit Us
+==================== */
 @media (min-width: 1025px) {
   #index-visit-us {
     padding-top: 80px;
@@ -1256,6 +1368,9 @@ footer > div #footer-scribble {
   }
 }
 
+/* =============
+    Classes Content
+============= */
 #classes-hero {
   background-image: url("../img/Classes/classhero.jpg");
   background-position: center;
@@ -1268,13 +1383,72 @@ footer > div #footer-scribble {
     height: 700px;
   }
 }
+#classes-hero h1 {
+  color: #1B4965;
+}
 #classes-hero .hero-scribble {
-  padding-top: 105px;
   height: 120px;
+  padding-top: 105px;
 }
 @media (min-width: 1025px) {
   #classes-hero .hero-scribble {
-    height: 150px;
-    padding-top: 165px;
+    height: 160px;
+    padding-right: 15px;
+    padding-top: 155px;
   }
+}
+
+/* =================
+     Times Info
+==================== */
+#classes-times {
+  padding-top: 0px;
+}
+@media (min-width: 768px) {
+  #classes-times > div {
+    grid-template-areas: "classtext classtime";
+    grid-template-columns: 50% auto;
+  }
+}
+#classes-times > div article:nth-child(1) {
+  background-color: #FFF2DA;
+}
+@media (min-width: 768px) {
+  #classes-times > div article:nth-child(1) {
+    grid-area: classtext;
+  }
+}
+#classes-times > div article:nth-child(2) {
+  padding-bottom: 0px;
+}
+@media (min-width: 768px) {
+  #classes-times > div article:nth-child(2) {
+    grid-area: classtime;
+  }
+}
+#classes-times > div article:nth-child(2) div {
+  text-align: center;
+}
+
+/* =================
+     Carousel
+==================== */
+#classes-carousel > div .my-slider div {
+  height: 200px;
+}
+@media (min-width: 768px) {
+  #classes-carousel > div .my-slider div {
+    height: 300px;
+  }
+}
+@media (min-width: 1025px) {
+  #classes-carousel > div .my-slider div {
+    height: 460px;
+  }
+}
+#classes-carousel > div .my-slider div img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
 }

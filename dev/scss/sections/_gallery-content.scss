@@ -107,17 +107,23 @@
 			}
 		}
 		li:nth-child(5) {
+			display: none;
 			@include lg {
+				display: block;
 				grid-area: five;
 			}
 		}
 		li:nth-child(6) {
+			display: none;
 			@include lg {
+				display: block;
 				grid-area: six;
 			}
 		}
 		li:nth-child(7) {
+			display: none;
 			@include xl {
+				display: block;
 				grid-area: seven;
 			}
 		}

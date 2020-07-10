@@ -1464,18 +1464,30 @@ footer > div #footer-scribble {
     grid-area: four;
   }
 }
+#gallery-gallery ul li:nth-child(5) {
+  display: none;
+}
 @media (min-width: 1025px) {
   #gallery-gallery ul li:nth-child(5) {
+    display: block;
     grid-area: five;
   }
 }
+#gallery-gallery ul li:nth-child(6) {
+  display: none;
+}
 @media (min-width: 1025px) {
   #gallery-gallery ul li:nth-child(6) {
+    display: block;
     grid-area: six;
   }
 }
+#gallery-gallery ul li:nth-child(7) {
+  display: none;
+}
 @media (min-width: 1440px) {
   #gallery-gallery ul li:nth-child(7) {
+    display: block;
     grid-area: seven;
   }
 }

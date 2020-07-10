@@ -1402,11 +1402,6 @@ footer > div #footer-scribble {
 }
 @media (min-width: 1025px) {
   #gallery-header h1 {
-    padding-top: 90px;
-  }
-}
-@media (min-width: 1025px) {
-  #gallery-header h1 {
     padding-top: 100px;
   }
 }
@@ -1631,4 +1626,81 @@ footer > div #footer-scribble {
   object-fit: cover;
   object-position: center;
   width: 100%;
+}
+
+/* =============
+    Instagram Content
+============= */
+#ig-header {
+  background-color: #1B4965;
+  background-image: url("../img/Instagram/igbg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  background-position-x: -450px;
+}
+@media (min-width: 768px) {
+  #ig-header {
+    height: 250px;
+    background-size: contain;
+    background-position-x: -110px;
+  }
+}
+@media (min-width: 1025px) {
+  #ig-header {
+    height: 300px;
+    background-size: contain;
+    background-position-x: center;
+  }
+}
+@media (min-width: 1440px) {
+  #ig-header {
+    background-size: contain;
+  }
+}
+#ig-header h1 {
+  position: static;
+  text-align: center;
+  padding-top: 90px;
+  line-height: 2.5rem;
+  color: #1B4965;
+}
+@media (min-width: 1025px) {
+  #ig-header h1 {
+    padding-top: 90px;
+    padding-left: 250px;
+    font-size: 4.0625rem;
+    line-height: 3.75rem;
+  }
+}
+
+/* =============
+    Contact Content
+============= */
+#contact-hero {
+  background-image: url("../img/Contact/contacthero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  #contact-hero {
+    height: 700px;
+  }
+}
+#contact-hero h1 {
+  color: #1B4965;
+}
+#contact-hero .hero-scribble {
+  height: 185px;
+  padding-top: 50px;
+}
+@media (min-width: 1025px) {
+  #contact-hero .hero-scribble {
+    height: 280px;
+    padding-right: 15px;
+    padding-top: 65px;
+  }
 }

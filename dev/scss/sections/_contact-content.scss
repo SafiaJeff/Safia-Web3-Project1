@@ -1,0 +1,26 @@
+/* =============
+    Contact Content
+============= */
+
+#contact-hero {
+	background-image: url('../img/Contact/contacthero.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+	text-align: center;
+	@include lg {
+		height: 700px;
+	}
+	h1 {
+		color: $navy;
+	}
+	.hero-scribble {
+		height: 185px;
+		padding-top: 50px;
+		@include lg {
+			height: 280px;
+			padding-right: 15px;
+			padding-top: 65px;
+		}
+	}
+}

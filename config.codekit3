@@ -25,6 +25,14 @@
 		"oAP": "/deploy/classes.html",
 		"oF": 0
 		},
+	"/deploy/contact.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/contact.html",
+		"oF": 0
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -109,71 +117,33 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Contact/og/emptyplate": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Contact/og/emptyplate",
-		"oF": 0
-		},
-	"/deploy/img/Contact/og/kara-eads--0eTYFd2pzM-unsplash.jpg": {
+	"/deploy/img/Contact/contacthero.jpg": {
 		"ft": 16384,
-		"iS": 1406980,
+		"iS": 191307,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Contact/og/kara-eads--0eTYFd2pzM-unsplash.jpg",
+		"oAP": "/deploy/img/Contact/contacthero.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/Contact/og/plate.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Contact/og/plate.psd",
-		"oF": 0
-		},
-	"/deploy/img/Contact/resized/contacthero.jpg": {
-		"ft": 16384,
-		"iS": 311819,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Contact/resized/contacthero.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Contact/resized/emptyplate.png": {
+	"/deploy/img/Contact/contactscribble.png": {
 		"ft": 32768,
-		"iS": 255138,
+		"iS": 20029,
 		"oA": 0,
-		"oAP": "/deploy/img/Contact/resized/emptyplate.png",
+		"oAP": "/deploy/img/Contact/contactscribble.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Contact/tinified/contacthero.jpg": {
-		"ft": 16384,
-		"iS": 191307,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Contact/tinified/contacthero.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Contact/tinified/emptyplate.png": {
+	"/deploy/img/Contact/emptyplate.png": {
 		"ft": 32768,
 		"iS": 229612,
 		"oA": 0,
-		"oAP": "/deploy/img/Contact/tinified/emptyplate.png",
+		"oAP": "/deploy/img/Contact/emptyplate.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -416,12 +386,30 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/Instagram/igbg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/Instagram/igbg.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/index.html",
+		"oF": 0
+		},
+	"/deploy/instagram.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/instagram.html",
 		"oF": 0
 		},
 	"/deploy/js/scripts-min.js": {
@@ -448,8 +436,8 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/contact.html",
-		"oF": 0
+		"oAP": "/deploy/contact.html",
+		"oF": 2
 		},
 	"/dev/content/classes-content.kit": {
 		"cB": 0,
@@ -463,7 +451,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/content/contact-content.html",
 		"oF": 0
 		},
@@ -487,7 +475,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/content/instagram-content.html",
 		"oF": 0
 		},
@@ -544,8 +532,8 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/instagram.html",
-		"oF": 0
+		"oAP": "/deploy/instagram.html",
+		"oF": 2
 		},
 	"/dev/js/fancyBox.js": {
 		"bF": 0,
@@ -749,6 +737,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/sections/_contact-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_contact-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/sections/_gallery-content.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -771,6 +772,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_index-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_instagram-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_instagram-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

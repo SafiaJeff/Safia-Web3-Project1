@@ -98,6 +98,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/Classes/times-scribble.png": {
+		"ft": 32768,
+		"iS": 25937,
+		"oA": 0,
+		"oAP": "/deploy/img/Classes/times-scribble.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/Contact/og/emptyplate": {
 		"cB": 0,
 		"ft": 8192,
@@ -179,6 +190,26 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/Gallery/bluebg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/Gallery/bluebg.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/Gallery/bluebg2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/Gallery/bluebg2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/Gallery/bluepotterywheel.jpg": {
 		"ft": 16384,
 		"iS": 54903,
@@ -243,6 +274,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Gallery/times-scribble.png": {
+		"ft": 32768,
+		"iS": 25937,
+		"oA": 0,
+		"oAP": "/deploy/img/Gallery/times-scribble.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/Gallery/topviewwheel.jpg": {

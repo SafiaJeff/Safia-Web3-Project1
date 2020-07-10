@@ -30,23 +30,94 @@
 	padding-top: 0px;
 	>div {
 		@include md {
+			display: grid;
 			grid-template-areas: "classtext classtime";
 			grid-template-columns: 50% auto;
 		}
+		@include lg {
+			grid-template-columns: 60% auto;
+		}
+
 		article:nth-child(1) {
 			background-color: $pale-cream;
 			@include md {
 				grid-area: classtext;
 			}
-		}
-		article:nth-child(2) {
-			padding-bottom: 0px;
-			@include md {
-				grid-area: classtime;
-			}
 			div {
-				text-align: center;
+				
+				p {
+					padding-left: 50px;
+					padding-right: 50px;
+					text-align: justify;
+					@include md {
+						padding-left: 40px;
+						padding-right: 40px;
+						text-align: left;
+					}
+					@include lg {
+						padding-left: 100px;
+						padding-right: 100px;
+					}
+				}
 			}
+		}
+
+		article:nth-child(2) {
+			padding-bottom: 20px;
+			padding-top: 50px;
+			
+
+			@include md {
+				align-items: center;
+				display: flex;
+				grid-area: classtime;
+				justify-content: center;
+				padding-top: 0px;
+			}
+
+			div{	
+				text-align: center;
+				position: relative;
+
+				h2{
+					@include lg{
+						padding-bottom: 15px;
+					}
+				}
+
+				img{
+					position: absolute;
+					top: -25px;
+					left: 95px;
+					height: 160%;
+					z-index: -1;
+					
+					@include md{
+						left: 0px;
+						height: 180%;
+						top: -30px;
+					}
+					// height: 100%;
+
+					@include lg{
+						height: 180%;
+						left: -30px;
+						top: -40px;
+					}
+				}
+			}
+
+			// aside{
+			// 	img{
+			// 		position: absolute;
+					
+			// 		height: 20%;
+
+			// 		@include lg{
+			// 			height: 100%;
+			// 		}
+			// 	}
+			// }
 		}
 	}
 }

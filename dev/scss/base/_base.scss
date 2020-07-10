@@ -60,6 +60,18 @@ a:visited {
     }
 }
 
+.grid-container-carousel{
+    @include xl {
+        display: grid;
+        grid-template-areas: ". container .";
+        grid-template-columns: auto 1440px auto;
+    }
+
+    >div {
+        grid-area: container;
+    }
+}
+
 .grid-container-header {
     //padding for responsive sizes
     display: grid;

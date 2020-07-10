@@ -3,52 +3,46 @@
 ============= */
 #gallery-header {
 	background-color: $navy;
-	#gallery-title-scribble {
-		text-align: center;
-		h1 {
-			color: $navy;
-			position: relative;
-			top: 100px;
-			@include lg {
-				top: 150px;
-			}
-		}
-		#gallery-title-scribble {
-			padding-bottom: 60px;
-			@include lg {
-				height: 220px;
-			}
-		}
-		#gallery-bg-scribble {
-			// left: 150;
-			height: 200px;
-			object-fit: cover;
-			object-position: 0px -50px;
-			position: absolute;
-			text-align: center;
-            width: 300px;
-            
-            // @include md {
-			// 	height: 100%;
-			// 	margin-left: -100px;
-			// 	margin-top: -30px;
-			// 	object-fit: none;
-			// 	object-position: 0px 0px;
-			// 	position: absolute;
-			// 	width: 20%;
-            // }
-            
-			@include lg {
-				height: 100%;
-				margin-left: -700px;
-				margin-top: -30px;
-				object-fit: none;
-				object-position: 0px 0px;
-				position: absolute;
-				width: 100%;
-			}
-		}
+
+	background-image: url('../img/Gallery/bluebg2.svg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200px;
+
+	@include lg{
+		height: 300px;
+		background-size: contain;
 	}
+
+	@include xl{
+		background-size: contain;
+	}
+
+	h1{
+		position: static;
+		text-align: center;
+		padding-top: 65px;
+		color: $navy;
+
+		@include lg{
+			padding-top: 90px;
+		}
+
+		@include lg{
+			padding-top: 100px;
+		}
+
+	}
+
+	// #gallery-title-scribble {
+
+	// 	h1 {
+	// 		color: $orange;
+	// 		text-align: center;
+	// 	}
+		
+	// }
 }
 #gallery-gallery {
 	ul {
@@ -73,11 +67,18 @@
 			grid-template-columns: repeat(12, 1fr);
 			grid-template-rows: 410px auto 305px;
 		}
-		@include xl {
-			// grid-template-areas: // gap: 20px;
-			// grid-template-columns: repeat(16, 1fr);
-			// grid-template-rows: 410px 550px 305px 305px;
+
+		@include xl{
+			grid-template-columns: 25% 20% 15% auto;
+			grid-template-rows: 400px 550px 300px 300px;
+			grid-template-areas: 
+				"one one two two"
+				"seven seven seven seven"
+				"three five five six"
+				"four five five six";
 		}
+
+		
 		li {
 			img {
 				height: 100%;

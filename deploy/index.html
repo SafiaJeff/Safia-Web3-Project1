@@ -134,7 +134,10 @@
                         Sunday: 12pm – 6pm
                     </p>
                 </article>
-                <article id="index-map"></article>
+        
+                <article id="index-map">
+                    <div id="map"></div>
+                </article>
             </div>
         </section> 
     <footer class="grid-container content-spacing subhead-spacing">
@@ -165,7 +168,31 @@
                 </div>
             
             </footer>
-    
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = {
+                lat: -25.344,
+                lng: 131.036
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdaJFWFo156e5Y7ykdZHHsGQX0D-Lgg-w&callback=initMap">
+    </script>
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Greensock -->
@@ -175,7 +202,7 @@
     <!-- Tiny Slider -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     
-    <script src="js/scripts-min.js"></script>       
+    <script src="js/scripts-min.js"></script>
 </body>
 
 </html>

@@ -1320,7 +1320,7 @@ footer > div #footer-scribble {
 }
 
 /* =================
-      Visit Us
+      Visit Us + Google Map
 ==================== */
 @media (min-width: 1025px) {
   #index-visit-us {
@@ -1358,14 +1358,14 @@ footer > div #footer-scribble {
     text-align: left;
   }
 }
-@media (min-width: 768px) {
-  #index-visit-us div #index-map {
-    grid-area: map;
-  }
+#index-visit-us div #index-map #map {
+  background-color: #F7DBA7;
+  height: 300px;
+  width: 100%;
 }
-@media (min-width: 768px) {
-  #index-visit-us div #index-map {
-    grid-area: map;
+@media (min-width: 1025px) {
+  #index-visit-us div #index-map #map {
+    height: 450px;
   }
 }
 

@@ -343,7 +343,7 @@
 }
 
 /* =================
-      Visit Us
+      Visit Us + Google Map
 ==================== */
 #index-visit-us {
     @include lg {
@@ -397,20 +397,22 @@
         }
 
         #index-map {
-            // background-image: url('../img/Index/map-placeholder.jpg');
-            // background-position: center;
-            // background-size: cover;
-            // height: 300px;
+            #map{
+                background-color: $cream;
+                height: 300px;
+                width: 100%;
 
-            @include md {
-                grid-area: map;
-                // height: 600px;
+                @include lg{
+                    height: 450px;
+                }
             }
+          
+            // @include lg {
+            //     grid-area: map;
+            //     height: 600px;
+            // }
 
-            @include md {
-                grid-area: map;
-                // height: 100%;
-            }
+           
 
         }
 

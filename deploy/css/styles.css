@@ -792,6 +792,10 @@ textarea {
   background: #FFADE2;
 }
 
+.referral {
+  display: none !important;
+}
+
 /* =============
     Header
 ============= */
@@ -1354,12 +1358,6 @@ footer > div #footer-scribble {
     text-align: left;
   }
 }
-#index-visit-us div #index-map {
-  background-image: url("../img/Index/map-placeholder.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-}
 @media (min-width: 768px) {
   #index-visit-us div #index-map {
     grid-area: map;
@@ -1368,7 +1366,6 @@ footer > div #footer-scribble {
 @media (min-width: 768px) {
   #index-visit-us div #index-map {
     grid-area: map;
-    height: 100%;
   }
 }
 
@@ -1673,6 +1670,10 @@ footer > div #footer-scribble {
     font-size: 4.0625rem;
     line-height: 3.75rem;
   }
+}
+
+#ig-feed {
+  background-color: #FFF2DA;
 }
 
 /* =============

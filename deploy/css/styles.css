@@ -850,6 +850,7 @@ footer {
   background-color: #1B4965;
   color: #fff;
   text-align: center;
+  overflow: hidden;
 }
 footer > div {
   position: relative;
@@ -991,7 +992,6 @@ footer > div #footer-scribble {
   left: 0;
   width: 120%;
   z-index: 10;
-  overflow: hidden;
   margin-top: 50px;
   margin-left: -140px;
 }
@@ -1702,5 +1702,48 @@ footer > div #footer-scribble {
     height: 280px;
     padding-right: 15px;
     padding-top: 65px;
+  }
+}
+
+/* =============
+    Forms
+============= */
+#contact-forms {
+  background-color: #FFF2DA;
+}
+#contact-forms div {
+  margin-top: 60px;
+  background-image: url("../img/Contact/platecontact.png");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position-x: -140px;
+}
+@media (min-width: 768px) {
+  #contact-forms div {
+    margin-top: 0px;
+  }
+}
+#contact-forms div #scribtop {
+  margin-top: -90px;
+  margin-left: -30px;
+}
+@media (min-width: 768px) {
+  #contact-forms div #scribtop {
+    display: none;
+  }
+}
+#contact-forms div #arrow {
+  display: none;
+  bottom: -50px;
+}
+@media (min-width: 768px) {
+  #contact-forms div {
+    background-position-x: center;
+  }
+}
+@media (min-width: 1025px) {
+  #contact-forms div {
+    height: 800px;
+    background-size: contain;
   }
 }

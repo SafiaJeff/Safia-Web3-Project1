@@ -3,24 +3,78 @@
 ============= */
 
 #contact-hero {
-	background-image: url('../img/Contact/contacthero.jpg');
-	background-position: center;
-	background-size: cover;
-	height: 500px;
-	text-align: center;
-	@include lg {
-		height: 700px;
-	}
-	h1 {
-		color: $navy;
-	}
-	.hero-scribble {
-		height: 185px;
-		padding-top: 50px;
-		@include lg {
-			height: 280px;
-			padding-right: 15px;
-			padding-top: 65px;
-		}
-	}
+    background-image: url('../img/Contact/contacthero.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+
+    @include lg {
+        height: 700px;
+    }
+
+    h1 {
+        color: $navy;
+    }
+    
+
+    .hero-scribble {
+        height: 185px;
+        padding-top: 50px;
+
+        @include lg {
+            height: 280px;
+            padding-right: 15px;
+            padding-top: 65px;
+        }
+    }
+}
+
+/* =============
+    Forms
+============= */
+#contact-forms {
+    background-color: $pale-cream;
+
+    div {
+        margin-top: 60px;
+
+        @include md{
+            margin-top: 0px;
+        }
+
+        #scribtop {
+            margin-top: -90px;
+            margin-left: -30px;
+
+            @include md{
+                display: none;
+            }
+        }
+
+        #arrow{
+            display: none;
+            // position: absolute;
+            bottom: -50px;
+            // overflow: hidden;
+        }
+
+        background-image: url('../img/Contact/platecontact.png');
+        height: 600px;
+        background-repeat: no-repeat;
+        background-position-x: -140px;
+
+        // position: relative;
+        // overflow: hidden;
+
+        @include md{
+            background-position-x: center;
+        }
+
+        @include lg{
+            height: 800px;
+            background-size: contain;
+        }
+
+    }
 }

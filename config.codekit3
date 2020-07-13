@@ -117,6 +117,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/Contact/arrow.png": {
+		"ft": 32768,
+		"iS": 8614,
+		"oA": 0,
+		"oAP": "/deploy/img/Contact/arrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/Contact/contacthero.jpg": {
 		"ft": 16384,
 		"iS": 191307,
@@ -147,6 +158,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Contact/platecontact.png": {
+		"ft": 32768,
+		"iS": 505963,
+		"oA": 0,
+		"oAP": "/deploy/img/Contact/platecontact.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Contact/scribtop.png": {
+		"ft": 32768,
+		"iS": 3603,
+		"oA": 0,
+		"oAP": "/deploy/img/Contact/scribtop.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

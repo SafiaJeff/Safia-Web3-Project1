@@ -1,3 +1,27 @@
 /* =============
     Buttons
 ============= */
+.green-button {
+    transition: 0.25s;
+
+    background-color: $green;
+    border: none;
+    color: $white;
+    border-radius: 3px;
+    
+    cursor: pointer;
+    padding: 0 1em;
+  height: 2.5em;
+
+    @include lg {
+        padding: 0 15px;
+    }
+
+    @include xl {
+        padding: 0 25px;
+    }
+
+    &:hover {
+        background-color: $light-green;
+    }
+}

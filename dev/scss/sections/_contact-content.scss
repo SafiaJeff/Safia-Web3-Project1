@@ -1,80 +1,185 @@
 /* =============
     Contact Content
 ============= */
-
 #contact-hero {
-    background-image: url('../img/Contact/contacthero.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    text-align: center;
-
-    @include lg {
-        height: 700px;
-    }
-
-    h1 {
-        color: $navy;
-    }
-    
-
-    .hero-scribble {
-        height: 185px;
-        padding-top: 50px;
-
-        @include lg {
-            height: 280px;
-            padding-right: 15px;
-            padding-top: 65px;
-        }
-    }
+	background-image: url('../img/Contact/contacthero.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+	text-align: center;
+	@include lg {
+		height: 700px;
+	}
+	h1 {
+		color: $navy;
+	}
+	.hero-scribble {
+		height: 185px;
+		padding-top: 50px;
+		@include lg {
+			height: 280px;
+			padding-right: 15px;
+			padding-top: 65px;
+		}
+	}
 }
-
 /* =============
     Forms
 ============= */
 #contact-forms {
     background-color: $pale-cream;
+    
+    @include lg {
+        display: grid;
+        grid-template-columns: auto 60% auto;
+        grid-template-areas: ". form .";
+    }
 
-    div {
+	>div {
+        @include lg {
+            grid-area: form;
+        }
+        
+		background-image: url('../img/Contact/platecontact.png');
+		background-position-x: -140px;
+		background-repeat: no-repeat;
+		height: 600px;
         margin-top: 60px;
 
-        @include md{
-            margin-top: 0px;
-        }
+        // @include md{
+        //     display: grid;
+        //     grid-template-columns: 1fr 1fr;
+        //     grid-template-areas: ". plate";
+        // }
+        
+		#form-container{
 
-        #scribtop {
-            margin-top: -90px;
-            margin-left: -30px;
+            padding: 40px 20px 0px 20px;
 
             @include md{
-                display: none;
+                padding: 150px 40px 0px 40px;
+            }
+
+            
+
+            form{
+                display: grid;
+                gap: 15px;
+                
+
+                @include md {
+                    grid-template-columns: 35% 15% auto;
+                    grid-template-areas:
+                        "name . message"
+                        "phone . message"
+                        "email . message"
+                        ". . send";
+                        gap: 20px;
+                    
+                        // padding: 0px 40px;
+                }
+
+                @include lg {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas:
+                        "name phone"
+                        "email email"
+                        "message message"
+                        ". send";
+                        // padding: 0px 40px;
+                }
+
+                section{
+        
+                    background-color: $white;
+                    width: 96%;
+                    padding: 0 2%;
+                    border-bottom: 1px solid $navy;
+                    border-radius: 8px;
+        
+        
+                    input{
+                        border: none;
+                        width: 100%;
+                        padding: 4% 0;
+                    }
+        
+                    textarea {
+                        border: none;
+                        height: 150px;
+                        width: 100%;
+                        padding: 0;
+
+                        @include md{
+                            height: 300px;
+                        }
+                    }
+                }
+
+                section:nth-child(1) {
+                    @include md {
+                        grid-area: name;
+                    }
+                }
+        
+                section:nth-child(2) {
+                    @include md {
+                        grid-area: phone;
+                    }
+                }
+        
+                section:nth-child(3) {
+                    @include md {
+                        grid-area: email;
+                    }
+                }
+        
+                section:nth-child(4) {
+                 
+                    @include md {
+                        grid-area: message;
+                    }
+
+                    padding-top: 4%;
+                }
+        
+                section:nth-child(5) {
+                    @include md {
+                        grid-area: send;
+                    }
+                    background-color: transparent;
+                    text-align: right;
+                    border-bottom: none;
+    
+                    button{
+                        border: none;
+                    }
+                }
+        
+                
             }
         }
-
-        #arrow{
-            display: none;
-            // position: absolute;
-            bottom: -50px;
-            // overflow: hidden;
+        
+		@include md {
+			background-position-x: center;
         }
-
-        background-image: url('../img/Contact/platecontact.png');
-        height: 600px;
-        background-repeat: no-repeat;
-        background-position-x: -140px;
-
-        // position: relative;
-        // overflow: hidden;
-
-        @include md{
-            background-position-x: center;
-        }
-
-        @include lg{
-            height: 800px;
-            background-size: contain;
-        }
-
-    }
+		#scribtop {
+            // display: none;
+			margin-left: -30px;
+			margin-top: -90px;
+			@include md {
+				display: none;
+			}
+		}
+		#arrow {
+			// overflow: hidden;
+			// position: absolute;
+			bottom: -50px;
+			display: none;
+		}
+		@include lg {
+			background-size: contain;
+			height: 800px;
+		}
+	}
 }

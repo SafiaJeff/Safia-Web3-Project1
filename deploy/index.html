@@ -180,27 +180,21 @@
                 },
                 zoom: 16,
 
-                hide: [{
-                        featureType: 'poi.government',
-                        stylers: [{
-                            visibility: "off"
-                        }]
-                    },
-                    {
-                        featureType: 'poi.park',
-                        stylers: [{
-                            visibility: "off"
-                        }]
-                    },
+
+
+
+
+
+                styles: [
+
                     {
                         featureType: 'transit',
                         stylers: [{
                             visibility: "off"
                         }]
-                    }
-                ],
+                    },
 
-                styles: [{
+                    {
                         elementType: 'geometry',
                         stylers: [{
                             color: '#FFF2DA'
@@ -335,7 +329,7 @@
                     lng: -75.190581
                 }
             });
-            marker.addListener('click', toggleBounce);
+            //marker.addListener('click', toggleBounce);
         }
     </script>
 

@@ -2,70 +2,193 @@
     Contact Content
 ============= */
 #contact-hero {
-	background-image: url('../img/Contact/contacthero.jpg');
-	background-position: center;
-	background-size: cover;
-	height: 500px;
-	text-align: center;
-	@include lg {
-		height: 700px;
-	}
-	h1 {
-		color: $navy;
-	}
-	.hero-scribble {
-		height: 185px;
-		padding-top: 50px;
-		@include lg {
-			height: 280px;
-			padding-right: 15px;
-			padding-top: 65px;
-		}
-	}
+    background-image: url('../img/Contact/contacthero.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+
+    @include lg {
+        height: 700px;
+    }
+
+    h1 {
+        color: $navy;
+    }
+
+    .hero-scribble {
+        height: 185px;
+        padding-top: 50px;
+
+        @include lg {
+            height: 280px;
+            padding-right: 15px;
+            padding-top: 65px;
+        }
+    }
 }
+
 /* =============
     Forms
 ============= */
 #contact-forms {
+
     background-color: $pale-cream;
-    
+
+    background-image: url('../img/Contact/platecontact.png');
+        background-position-x: center;
+        background-repeat: no-repeat;
+        // margin-top: 60px;
+        @include md{
+            background-position-x: 300px;
+        }
+
     @include lg {
         display: grid;
         grid-template-columns: auto 60% auto;
         grid-template-areas: ". form .";
     }
 
-	>div {
+    >div {
+
+        #contact-button-section {
+            display: none;
+
+            display: grid;
+            place-items: center;
+            height: 200px;
+
+            padding-top: 120px;
+
+            @include md {
+                padding-top: 150px;
+            }
+
+            @include md {
+                height: 300px;
+            }
+
+            @include lg {
+                height: 400px;
+            }
+
+            #button-container {
+                position: relative;
+                transition: 0.5s;
+
+                &:hover {
+                    #contact-options {
+                        opacity: 1;
+                        pointer-events: auto;
+                    }
+                }
+
+                #contact-us-btn {
+                    border: none;
+                    transition: 0.25s;
+                    background: #7AD6B9;
+
+
+                }
+
+                #contact-options {
+                    pointer-events: none;
+                    transition: 0.5s;
+                    opacity: 0;
+                    background-color: #fff;
+                    position: absolute;
+                    top: 100%;
+                    left: 0%;
+                    background-color: $pale-cream;
+                    width: 100%;
+
+                    @include md {
+                        top: -25%;
+                        left: 90%;
+                    }
+
+                    a:link,
+                    a:visited {
+                        background-color: #fff;
+                        color: $green;
+                        font-size: rem-calc(16);
+                        width: 90%;
+                        transition: 0.25s;
+                        padding: 10% 5%;
+                        display: inline-block;
+
+                        @include md {
+                            font-size: rem-calc(20);
+                            padding: 5%;
+                        }
+
+                        i {
+                            margin-right: 10px;
+                        }
+
+                        &:hover,
+                        &:active {
+                            color: #fff;
+                            background-color: $navy;
+                        }
+                    }
+
+                    button {
+                        border: none;
+                        background-color: $white;
+                        width: 100%;
+                        color: $green;
+                        transition: 0.25s;
+                        padding: 10% 5%;
+                        text-align: left;
+                        font-size: rem-calc(16);
+
+                        @include md {
+                            font-size: rem-calc(20);
+                            padding: 5%;
+                        }
+
+                        i {
+                            margin-right: 10px;
+                        }
+
+                        &:hover {
+                            color: $white;
+                            background-color: $navy;
+                        }
+                    }
+                }
+            }
+        }
+
+
         @include lg {
             grid-area: form;
         }
-        
-		background-image: url('../img/Contact/platecontact.png');
-		background-position-x: -140px;
-		background-repeat: no-repeat;
-		height: 600px;
-        margin-top: 60px;
 
-        // @include md{
+        
+
+        // @include md{ 
         //     display: grid;
         //     grid-template-columns: 1fr 1fr;
         //     grid-template-areas: ". plate";
         // }
-        
-		#form-container{
+
+        #form-container {
+            display: none; 
 
             padding: 40px 20px 0px 20px;
 
-            @include md{
+            @include md {
                 padding: 150px 40px 0px 40px;
             }
 
-            
 
-            form{
+
+            form {
                 display: grid;
                 gap: 15px;
-                
+
 
                 @include md {
                     grid-template-columns: 35% 15% auto;
@@ -74,9 +197,7 @@
                         "phone . message"
                         "email . message"
                         ". . send";
-                        gap: 20px;
-                    
-                        // padding: 0px 40px;
+                    gap: 20px;
                 }
 
                 @include lg {
@@ -86,31 +207,30 @@
                         "email email"
                         "message message"
                         ". send";
-                        // padding: 0px 40px;
                 }
 
-                section{
-        
+                section {
+
                     background-color: $white;
                     width: 96%;
                     padding: 0 2%;
                     border-bottom: 1px solid $navy;
                     border-radius: 8px;
-        
-        
-                    input{
+
+
+                    input {
                         border: none;
                         width: 100%;
                         padding: 4% 0;
                     }
-        
+
                     textarea {
                         border: none;
                         height: 150px;
                         width: 100%;
                         padding: 0;
 
-                        @include md{
+                        @include md {
                             height: 300px;
                         }
                     }
@@ -121,65 +241,70 @@
                         grid-area: name;
                     }
                 }
-        
+
                 section:nth-child(2) {
                     @include md {
                         grid-area: phone;
                     }
                 }
-        
+
                 section:nth-child(3) {
                     @include md {
                         grid-area: email;
                     }
                 }
-        
+
                 section:nth-child(4) {
-                 
+
                     @include md {
                         grid-area: message;
                     }
 
                     padding-top: 4%;
                 }
-        
+
                 section:nth-child(5) {
                     @include md {
                         grid-area: send;
                     }
+
                     background-color: transparent;
                     text-align: right;
                     border-bottom: none;
-    
-                    button{
+
+                    button {
                         border: none;
                     }
                 }
-        
-                
+
+
             }
         }
-        
-		@include md {
-			background-position-x: center;
+
+        @include md {
+            background-position-x: center;
         }
-		#scribtop {
+
+        #scribtop {
             // display: none;
-			margin-left: -30px;
-			margin-top: -90px;
-			@include md {
-				display: none;
-			}
-		}
-		#arrow {
-			// overflow: hidden;
-			// position: absolute;
-			bottom: -50px;
-			display: none;
-		}
-		@include lg {
-			background-size: contain;
-			height: 800px;
-		}
-	}
+            margin-left: -30px;
+            margin-top: -90px;
+
+            @include md {
+                display: none;
+            }
+        }
+
+        #arrow {
+            // overflow: hidden;
+            // position: absolute;
+            bottom: -50px;
+            display: none;
+        }
+
+        @include lg {
+            background-size: contain;
+            height: 800px;
+        }
+    }
 }

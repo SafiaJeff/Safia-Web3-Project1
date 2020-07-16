@@ -668,7 +668,8 @@ p {
   }
 }
 .green-button:hover {
-  background-color: #9DE6CF;
+  background-color: #1B4965;
+  color: #fff;
 }
 
 /* =============
@@ -1352,7 +1353,7 @@ footer > div #footer-scribble {
   }
 }
 @media (min-width: 768px) {
-  #index-visit-us div {
+  #index-visit-us > div {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 300px;
@@ -1360,34 +1361,35 @@ footer > div #footer-scribble {
   }
 }
 @media (min-width: 1025px) {
-  #index-visit-us div {
+  #index-visit-us > div {
     grid-template-columns: 30% auto;
     grid-template-rows: 450px;
   }
 }
-#index-visit-us div article:nth-child(1) {
+#index-visit-us > div article:nth-child(1) {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding-bottom: 30px;
 }
-#index-visit-us div article:nth-child(1) #address {
+#index-visit-us > div article:nth-child(1) #address {
   padding-bottom: 15px;
 }
 @media (min-width: 768px) {
-  #index-visit-us div article:nth-child(1) {
+  #index-visit-us > div article:nth-child(1) {
     grid-area: visit;
     padding-bottom: 0px;
     margin: auto;
     text-align: left;
   }
 }
-#index-visit-us div #index-map #map {
+#index-visit-us > div #index-map #map {
   background-color: #F7DBA7;
   height: 300px;
+  width: 100%;
 }
 @media (min-width: 1025px) {
-  #index-visit-us div #index-map #map {
+  #index-visit-us > div #index-map #map {
     height: 450px;
   }
 }
@@ -1734,6 +1736,14 @@ footer > div #footer-scribble {
 ============= */
 #contact-forms {
   background-color: #FFF2DA;
+  background-image: url("../img/Contact/platecontact.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  #contact-forms {
+    background-position-x: 300px;
+  }
 }
 @media (min-width: 1025px) {
   #contact-forms {
@@ -1742,12 +1752,107 @@ footer > div #footer-scribble {
     grid-template-areas: ". form .";
   }
 }
-#contact-forms > div {
-  background-image: url("../img/Contact/platecontact.png");
-  background-position-x: -140px;
-  background-repeat: no-repeat;
-  height: 600px;
-  margin-top: 60px;
+#contact-forms > div #contact-button-section {
+  display: none;
+  display: grid;
+  place-items: center;
+  height: 200px;
+  padding-top: 120px;
+}
+@media (min-width: 768px) {
+  #contact-forms > div #contact-button-section {
+    padding-top: 150px;
+  }
+}
+@media (min-width: 768px) {
+  #contact-forms > div #contact-button-section {
+    height: 300px;
+  }
+}
+@media (min-width: 1025px) {
+  #contact-forms > div #contact-button-section {
+    height: 400px;
+  }
+}
+#contact-forms > div #contact-button-section #button-container {
+  position: relative;
+  transition: 0.5s;
+}
+#contact-forms > div #contact-button-section #button-container:hover #contact-options {
+  opacity: 1;
+  pointer-events: auto;
+}
+#contact-forms > div #contact-button-section #button-container #contact-us-btn {
+  border: none;
+  transition: 0.25s;
+  background: #7AD6B9;
+}
+#contact-forms > div #contact-button-section #button-container #contact-options {
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  background-color: #FFF2DA;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #contact-forms > div #contact-button-section #button-container #contact-options {
+    top: -25%;
+    left: 90%;
+  }
+}
+#contact-forms > div #contact-button-section #button-container #contact-options a:link,
+#contact-forms > div #contact-button-section #button-container #contact-options a:visited {
+  background-color: #fff;
+  color: #55BF9E;
+  font-size: 1rem;
+  width: 90%;
+  transition: 0.25s;
+  padding: 10% 5%;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  #contact-forms > div #contact-button-section #button-container #contact-options a:link,
+#contact-forms > div #contact-button-section #button-container #contact-options a:visited {
+    font-size: 1.25rem;
+    padding: 5%;
+  }
+}
+#contact-forms > div #contact-button-section #button-container #contact-options a:link i,
+#contact-forms > div #contact-button-section #button-container #contact-options a:visited i {
+  margin-right: 10px;
+}
+#contact-forms > div #contact-button-section #button-container #contact-options a:link:hover, #contact-forms > div #contact-button-section #button-container #contact-options a:link:active,
+#contact-forms > div #contact-button-section #button-container #contact-options a:visited:hover,
+#contact-forms > div #contact-button-section #button-container #contact-options a:visited:active {
+  color: #fff;
+  background-color: #1B4965;
+}
+#contact-forms > div #contact-button-section #button-container #contact-options button {
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  color: #55BF9E;
+  transition: 0.25s;
+  padding: 10% 5%;
+  text-align: left;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  #contact-forms > div #contact-button-section #button-container #contact-options button {
+    font-size: 1.25rem;
+    padding: 5%;
+  }
+}
+#contact-forms > div #contact-button-section #button-container #contact-options button i {
+  margin-right: 10px;
+}
+#contact-forms > div #contact-button-section #button-container #contact-options button:hover {
+  color: #fff;
+  background-color: #1B4965;
 }
 @media (min-width: 1025px) {
   #contact-forms > div {
@@ -1755,6 +1860,7 @@ footer > div #footer-scribble {
   }
 }
 #contact-forms > div #form-container {
+  display: none;
   padding: 40px 20px 0px 20px;
 }
 @media (min-width: 768px) {

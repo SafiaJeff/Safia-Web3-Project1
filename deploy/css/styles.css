@@ -1738,18 +1738,31 @@ footer > div #footer-scribble {
   background-color: #FFF2DA;
   background-image: url("../img/Contact/platecontact.png");
   background-position-x: center;
+  background-position-y: 100px;
   background-repeat: no-repeat;
+  padding: 100px 0px 230px 0px;
 }
 @media (min-width: 768px) {
   #contact-forms {
     background-position-x: 300px;
+    padding: 100px 0px 190px 0px;
   }
 }
 @media (min-width: 1025px) {
   #contact-forms {
     display: grid;
-    grid-template-columns: auto 60% auto;
+    grid-template-columns: auto 50% auto;
     grid-template-areas: ". form .";
+    padding: 300px 0px 0px 0px;
+    background-size: 70%;
+    background-position-y: center;
+    background-position-x: center;
+  }
+}
+@media (min-width: 1440px) {
+  #contact-forms {
+    grid-template-columns: auto 600px auto;
+    background-size: 800px;
   }
 }
 #contact-forms > div #contact-button-section {
@@ -1767,16 +1780,28 @@ footer > div #footer-scribble {
 @media (min-width: 768px) {
   #contact-forms > div #contact-button-section {
     height: 300px;
+    padding-bottom: 50px;
   }
 }
 @media (min-width: 1025px) {
   #contact-forms > div #contact-button-section {
     height: 400px;
+    padding-top: 50px;
   }
 }
 #contact-forms > div #contact-button-section #button-container {
   position: relative;
   transition: 0.5s;
+}
+@media (min-width: 768px) {
+  #contact-forms > div #contact-button-section #button-container {
+    padding-left: 100px;
+  }
+}
+@media (min-width: 1025px) {
+  #contact-forms > div #contact-button-section #button-container {
+    padding-left: 0px;
+  }
 }
 #contact-forms > div #contact-button-section #button-container:hover #contact-options {
   opacity: 1;
@@ -1868,6 +1893,11 @@ footer > div #footer-scribble {
     padding: 150px 40px 0px 40px;
   }
 }
+@media (min-width: 1025px) {
+  #contact-forms > div #form-container {
+    padding: 30px 40px 0px 40px;
+  }
+}
 #contact-forms > div #form-container form {
   display: grid;
   gap: 15px;
@@ -1906,6 +1936,11 @@ footer > div #footer-scribble {
 @media (min-width: 768px) {
   #contact-forms > div #form-container form section textarea {
     height: 300px;
+  }
+}
+@media (min-width: 1025px) {
+  #contact-forms > div #form-container form section textarea {
+    height: 250px;
   }
 }
 @media (min-width: 768px) {

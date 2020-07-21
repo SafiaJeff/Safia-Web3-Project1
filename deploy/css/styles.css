@@ -695,7 +695,7 @@ textarea {
 ============= */
 #main-nav {
   background-color: #9DE6CF;
-  display: grid;
+  display: none;
   place-items: center;
   position: fixed;
   top: 0;

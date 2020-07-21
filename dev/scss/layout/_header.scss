@@ -4,6 +4,12 @@
 
 header{
     // border-bottom: solid 1px red;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: $white;
+    z-index: 100;
     div{
         display: grid;
         grid-template-columns: repeat(2,1fr);

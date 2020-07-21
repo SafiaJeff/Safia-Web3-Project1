@@ -693,6 +693,81 @@ textarea {
 /* =============
     Navigation
 ============= */
+#main-nav {
+  background-color: #9DE6CF;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 90;
+}
+#main-nav ul li a:link,
+#main-nav ul li a:visited {
+  border-bottom: 1px solid #FFF2DA;
+  color: #1B4965;
+  display: inline-block;
+  font-size: 1.5625rem;
+  padding: 20px 0 20px 10px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #main-nav ul li a:link,
+#main-nav ul li a:visited {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1025px) {
+  #main-nav ul li a:link,
+#main-nav ul li a:visited {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 1440px) {
+  #main-nav ul li a:link,
+#main-nav ul li a:visited {
+    font-size: 3.75rem;
+  }
+}
+#main-nav ul li a:link i,
+#main-nav ul li a:visited i {
+  color: #fff;
+  font-size: 0.9375rem;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  #main-nav ul li a:link i,
+#main-nav ul li a:visited i {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1025px) {
+  #main-nav ul li a:link i,
+#main-nav ul li a:visited i {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1440px) {
+  #main-nav ul li a:link i,
+#main-nav ul li a:visited i {
+    font-size: 2.5rem;
+  }
+}
+#main-nav ul li a:link:hover, #main-nav ul li a:link:active,
+#main-nav ul li a:visited:hover,
+#main-nav ul li a:visited:active {
+  background-color: #fff;
+}
+#main-nav ul li a:link:hover i, #main-nav ul li a:link:active i,
+#main-nav ul li a:visited:hover i,
+#main-nav ul li a:visited:active i {
+  color: #1B4965;
+}
+
 .fancybox-button, .fancybox-button:link, .fancybox-button:visited {
   color: #55BF9E;
 }
@@ -824,6 +899,14 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #fff;
+  z-index: 100;
+}
 header div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

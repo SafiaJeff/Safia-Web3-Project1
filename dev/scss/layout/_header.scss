@@ -3,7 +3,7 @@
 ============= */
 
 header{
-    // border-bottom: solid 1px red;
+    border-bottom: solid 1px $gray;
     width: 100%;
     top: 0;
     left: 0;
@@ -39,18 +39,26 @@ header{
         }
 
         #burger-container{
-            font-size: rem-calc(23);
-            color: $green;
+
             display: flex;
             justify-content: flex-end;
             align-items: center;
 
-            @include md{
-                font-size: rem-calc(25);
-            }
+            #burger{
+                cursor: pointer;
+                transition: 0.25s;
 
-            @include lg{
-                font-size: rem-calc(30);
+                #lines{
+                    stroke: $green !important;
+                    transition: 0.25s;
+                }
+
+                &:hover{
+                    #lines{
+                        stroke: $navy !important;
+                        
+                    }
+                }
             }
         }
     }

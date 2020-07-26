@@ -695,7 +695,7 @@ textarea {
 ============= */
 #main-nav {
   background-color: #9DE6CF;
-  display: none;
+  display: grid;
   place-items: center;
   position: fixed;
   top: 0;
@@ -900,6 +900,7 @@ textarea {
     Header
 ============= */
 header {
+  border-bottom: solid 1px #9CAFB7;
   width: 100%;
   top: 0;
   left: 0;
@@ -938,21 +939,20 @@ header div #logo-container p {
   }
 }
 header div #burger-container {
-  font-size: 1.4375rem;
-  color: #55BF9E;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-@media (min-width: 768px) {
-  header div #burger-container {
-    font-size: 1.5625rem;
-  }
+header div #burger-container #burger {
+  cursor: pointer;
+  transition: 0.25s;
 }
-@media (min-width: 1025px) {
-  header div #burger-container {
-    font-size: 1.875rem;
-  }
+header div #burger-container #burger #lines {
+  stroke: #55BF9E !important;
+  transition: 0.25s;
+}
+header div #burger-container #burger:hover #lines {
+  stroke: #1B4965 !important;
 }
 
 /* =============

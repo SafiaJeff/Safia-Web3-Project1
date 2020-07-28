@@ -1,5 +1,5 @@
 var burgerAnimationTimeLine = gsap.timeline({paused:true});
-var burgerAnimationSpeed = 0.2;
+var burgerAnimationSpeed = 0.25;
 
 // reset the transformOrigin for each line
 gsap.set(".lines",{transformOrigin:"center"});
@@ -17,14 +17,16 @@ function animateBurger(){
     if(canYouSeeTheMenu === true){
         // turn the burger into an X
         burgerAnimationTimeLine.play();
-    }else{
-        // turn the X into a burger
+    }
+    
+    else{
+        // turn the X into a burger aka reverse the animation
         burgerAnimationTimeLine.reverse();
     }
 
 }
 
-// function to change the color of hte burger lines back to green, only called on the compete timeline reverse of burgerAnimationTimeLine
+// function to change the color of the burger lines back to green, only called on the compete timeline reverse of burgerAnimationTimeLine
 function resetBurgerLinesColor(){
     //change the burger lines back to green over 0.25 seconds
     gsap.to(".lines",{duration:0.25, stroke:"#55BF9E"});

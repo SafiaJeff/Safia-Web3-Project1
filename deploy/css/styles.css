@@ -943,10 +943,6 @@ header div #burger-container {
   justify-content: flex-end;
   align-items: center;
 }
-header div #burger-container #burger {
-  cursor: pointer;
-  transition: 0.25s;
-}
 header div #burger-container #burger #lines {
   stroke: #55BF9E !important;
   transition: 0.25s;

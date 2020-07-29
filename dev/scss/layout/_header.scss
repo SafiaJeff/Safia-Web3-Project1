@@ -39,14 +39,13 @@ header{
         }
 
         #burger-container{
+            
 
             display: flex;
             justify-content: flex-end;
             align-items: center;
 
             #burger{
-                cursor: pointer;
-                transition: 0.25s;
 
                 #lines{
                     stroke: $green !important;

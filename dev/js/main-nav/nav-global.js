@@ -26,7 +26,6 @@ function hideShowMainNav(){
         //play the main nav animation into view ( pull it down )
         mainNavTimeline.play();
 
-
     }
     
     else{ 

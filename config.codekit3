@@ -911,6 +911,14 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/test.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/test.html",
+		"oF": 0
+		},
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 2,

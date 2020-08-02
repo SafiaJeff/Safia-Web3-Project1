@@ -1013,6 +1013,9 @@ footer > div section:nth-child(1) h1 {
     align-items: center;
   }
 }
+footer > div section:nth-child(2) {
+  z-index: 70;
+}
 @media (min-width: 768px) {
   footer > div section:nth-child(2) {
     grid-area: phone;
@@ -1068,6 +1071,9 @@ footer > div section:nth-child(2) ul li a:visited:active {
   footer > div section:nth-child(2) ul li:nth-child(1) {
     margin-left: 0px;
   }
+}
+footer > div section:nth-child(3) {
+  z-index: 70;
 }
 @media (min-width: 768px) {
   footer > div section:nth-child(3) {

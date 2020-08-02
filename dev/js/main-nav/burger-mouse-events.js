@@ -1,60 +1,54 @@
-
-var burgerToArrowTimeline = gsap.timeline({paused:true});
-var crossToArrowTimeline = gsap.timeline({paused:true});
 var burgerArrowSpeed = 0.25;
 
 //animate burger to down arrow
-burgerToArrowTimeline.to("#burger",{duration:burgerArrowSpeed, rotate:-90},"animateBurger")
-    .to("#bottom-line",{duration:burgerArrowSpeed,y:-10},"animateBurger")
-    .to("#top-line",{duration:burgerArrowSpeed,y:10},"animateBurger")
-    .to("#left-arrow",{duration:burgerArrowSpeed, rotation:55},"createArrow")
-    .to("#right-arrow",{duration:burgerArrowSpeed, rotation:-55},"createArrow")
+var burgerToArrowTimeline = gsap.timeline({paused:true});
+burgerToArrowTimeline.to("#burger",{duration:burgerArrowSpeed, rotation:-90}, "animateBurger")
+                        .to("#bottom-line",{duration:burgerArrowSpeed, y:-10}, "animateBurger")
+                        .to("#top-line",{duration:burgerArrowSpeed, y:10}, "animateBurger")
+                        .to("#down-left-arrow",{duration:burgerArrowSpeed, rotation:55}, "createArrow")
+                        .to("#down-right-arrow",{duration:burgerArrowSpeed, rotation:-55}, "createArrow");
 
-// animate x to up arrow
-crossToArrowTimeline.to("#burger",{duration:burgerArrowSpeed },"animateX")
-    .to("#bottom-line", {duration:burgerArrowSpeed,rotation:0},"animateX")
-    .to("#top-line", {duration:burgerArrowSpeed,rotation:0},"animateX")
-    .to("#left-arrow",{duration:burgerArrowSpeed, rotation:135, alpha:1, x:40},"animateX")
-    .to("#right-arrow",{duration:burgerArrowSpeed, rotation:-135, alpha:1, x:40},"animateX")
+//change up arrow point of rotation & fade out
+gsap.set("#up-left-arrow",{transformOrigin:"right center", alpha:0});
+gsap.set("#up-right-arrow",{transformOrigin:"right center", alpha:0});  
 
-//hover over burger, burger rotates 90
+//animate x to up arrow
+var xToUpArrowTimeline = gsap.timeline({paused:true});          
+xToUpArrowTimeline.to("#top-line",{duration:burgerArrowSpeed, rotation:0},"createArrowUp")
+                    .to("#bottom-line",{duration:burgerArrowSpeed, rotation:0},"createArrowUp")
+                    .to("#up-left-arrow",{duration:burgerArrowSpeed, rotation:55, alpha:1},"createArrowUp")
+                    .to("#up-right-arrow",{duration:burgerArrowSpeed, rotation:-55, alpha:1},"createArrowUp")
+
 $("#burger").on("mouseenter",function(){
     console.log("mouse enter");
 
-   
-    //when nav is NOT down, turn burger into arrow on hover
+    // console.log(canYouSeeTheMenu + " menu visible");
+
+    //nav hidden, burger turns to up arrow on hover
     if(canYouSeeTheMenu === false){
         burgerToArrowTimeline.play();
-
-        
-        
     }
-
-    //when nav IS down, turn X into arrow on hover
+    
+    //nav visible, x turns to up arrow
     else{
-        crossToArrowTimeline.play();
-         
-        
+        xToUpArrowTimeline.play()
     }
 })
 
-//stop hovering over burger, burger rotates back
 $("#burger").on("mouseleave",function(){
     console.log("mouse leave");
 
+    // console.log(canYouSeeTheMenu + " menu visible");
 
-    //when nav is NOT down, turn arrow into on leave
+    //nav hidden, arrow to burger on hover leave
     if(canYouSeeTheMenu === false){
         burgerToArrowTimeline.reverse();
-        
     }
-
-    //when nav IS down, turn arrow into X 
+    
+    //nav visible, arrow to x on hover leave
     else{
-        crossToArrowTimeline.reverse();
+        xToUpArrowTimeline.reverse()
     }
+   
 })
 
-// function resetArrowLines(){
-//     gsap.to("#right-arrow",{duration:0.25, y:0, x:10, rotation:55});
-// }    

@@ -14,23 +14,32 @@ gsap.set(".lines",{transformOrigin:"center"});
 burgerAnimationTimeLine.to("#top-line",{duration:burgerAnimationSpeed,rotation:45}, "burgerToX")
                         .to("#bottom-line",{duration:burgerAnimationSpeed,rotation:-45}, "burgerToX")
                         .to("#middle-line",{duration:burgerAnimationSpeed,alpha:0}, "burgerToX")
-                        .to("#right-arrow",{duration:burgerAnimationSpeed,alpha:0,rotate:0}, "burgerToX")
-                        .to("#left-arrow",{duration:burgerAnimationSpeed,alpha:0,rotate:0}, "burgerToX")
+                        .to("#down-right-arrow",{duration:burgerAnimationSpeed,alpha:0,rotate:0}, "burgerToX")
+                        .to("#down-left-arrow",{duration:burgerAnimationSpeed,alpha:0,rotate:0}, "burgerToX")
+
+var upArrowToBurger = gsap.timeline({paused:true});
+upArrowToBurger.to("#top-line",{y:0},"backToBurger")
+                .to("#bottom-line",{y:0},"backToBurger")
+                .to("#middle-line",{alpha:1},"backToBurger")
+                .to("#burger",{rotation:0},"backToBurger")
+                .to("#up-right-arrow",{alpha:0},"backToBurger")
+                .to("#up-left-arrow",{alpha:0},"backToBurger")
+                .to("#down-right-arrow",{alpha:1},"backToBurger")
+                .to("#down-left-arrow",{alpha:1},"backToBurger");
 
 function animateBurger(){
     // console.log("animate burger");
 
-    // check the  canYouSeeTheMenu bool valus
+    // check the canYouSeeTheMenu bool values
     if(canYouSeeTheMenu === true){
         // turn the burger into an X
         burgerAnimationTimeLine.play();
-
 
     }
     
     else{
         // turn the X into a burger aka reverse the animation
-        burgerAnimationTimeLine.reverse();
+        upArrowToBurger.play();
     }
 
 }

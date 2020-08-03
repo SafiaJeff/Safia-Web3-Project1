@@ -512,6 +512,14 @@
 		"oAP": "/dev/content/instagram-content.html",
 		"oF": 0
 		},
+	"/dev/content/reviews-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/reviews-content.html",
+		"oF": 0
+		},
 	"/dev/gallery.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -674,6 +682,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/dev/reviews.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/reviews.html",
+		"oF": 0
 		},
 	"/dev/scss/base/_base.scss": {
 		"aP": 0,
@@ -905,6 +921,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_instagram-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_reviews-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_reviews-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

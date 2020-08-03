@@ -170,3 +170,75 @@ a:visited {
         // padding-top: 90px;
     }
 }
+
+.review{
+    border: 1px red solid;
+    @include md{
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-template-areas: "reviewphoto reviewtext";
+    }
+
+    @include lg{
+        grid-template-columns: 30% auto;
+    }
+
+    @include lg{
+        grid-template-columns: 30% auto;
+        margin: 50px 200px;
+    }
+
+    aside{
+        grid-area: reviewphoto;
+        border: 2px pink solid;
+        display: grid;
+        
+        
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            height: 150px;
+            border-radius: 100px;
+
+            @include lg{
+                height: 200px;
+            }
+        }
+        p{
+            text-align: center;
+            font-family: 'Caveat', cursive;
+            font-weight: 700;
+            color: $navy;
+            padding-top: 10px;
+            font-size: rem-calc(20);
+
+            @include md{
+                font-size: rem-calc(23);
+            }
+
+            @include lg{
+                font-size: rem-calc(25);
+            }
+        }
+    }
+    article{
+        grid-area: reviewtext;
+        p{
+            border: 1px green solid;
+            // place-items: center;
+            // @include md{
+            //     padding: 0px 50px;
+            // }
+
+            // @include lg{
+            //     padding: 0px 150px;
+            // }
+
+            // @include xl{
+            //     padding: 0px 200px;
+            // }
+            
+            
+        }
+    }
+}

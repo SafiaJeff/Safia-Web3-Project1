@@ -429,6 +429,39 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/Reviews/Devyn.jpg": {
+		"ft": 16384,
+		"iS": 16425,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Reviews/Devyn.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Reviews/Marlena.jpg": {
+		"ft": 16384,
+		"iS": 22846,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Reviews/Marlena.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Reviews/Peter.jpg": {
+		"ft": 16384,
+		"iS": 16086,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Reviews/Peter.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -455,6 +488,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/deploy/reviews.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/reviews.html",
+		"oF": 0
 		},
 	"/dev/classes.kit": {
 		"cB": 0,
@@ -688,8 +729,8 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/reviews.html",
-		"oF": 0
+		"oAP": "/deploy/reviews.html",
+		"oF": 2
 		},
 	"/dev/scss/base/_base.scss": {
 		"aP": 0,
@@ -950,14 +991,6 @@
 		"oF": 2,
 		"oS": 0,
 		"sct": 0
-		},
-	"/dev/test.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/test.html",
-		"oF": 0
 		},
 	"/node_modules": {
 		"ft": 65536,

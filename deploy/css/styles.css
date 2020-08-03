@@ -507,6 +507,68 @@ a:visited {
   }
 }
 
+.review {
+  border: 1px red solid;
+}
+@media (min-width: 768px) {
+  .review {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-areas: "reviewphoto reviewtext";
+  }
+}
+@media (min-width: 1025px) {
+  .review {
+    grid-template-columns: 30% auto;
+  }
+}
+@media (min-width: 1025px) {
+  .review {
+    grid-template-columns: 30% auto;
+    margin: 50px 200px;
+  }
+}
+.review aside {
+  grid-area: reviewphoto;
+  border: 2px pink solid;
+  display: grid;
+}
+.review aside img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  border-radius: 100px;
+}
+@media (min-width: 1025px) {
+  .review aside img {
+    height: 200px;
+  }
+}
+.review aside p {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  color: #1B4965;
+  padding-top: 10px;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .review aside p {
+    font-size: 1.4375rem;
+  }
+}
+@media (min-width: 1025px) {
+  .review aside p {
+    font-size: 1.5625rem;
+  }
+}
+.review article {
+  grid-area: reviewtext;
+}
+.review article p {
+  border: 1px green solid;
+}
+
 /* =============
     Typography
 ============= */
@@ -2087,4 +2149,38 @@ footer > div #footer-scribble {
     background-size: contain;
     height: 800px;
   }
+}
+
+/* =============
+    Reviews Content
+============= */
+#reviews-hero {
+  background-image: url("../img/Classes/classhero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  #reviews-hero {
+    height: 700px;
+  }
+}
+#reviews-hero h1 {
+  color: #1B4965;
+}
+#reviews-hero .hero-scribble {
+  height: 120px;
+  padding-top: 105px;
+}
+@media (min-width: 1025px) {
+  #reviews-hero .hero-scribble {
+    height: 160px;
+    padding-right: 15px;
+    padding-top: 155px;
+  }
+}
+
+#reviews-reviews {
+  background-color: #FFF2DA;
 }

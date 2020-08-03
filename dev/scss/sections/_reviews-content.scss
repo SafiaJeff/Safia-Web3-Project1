@@ -1,0 +1,29 @@
+/* =============
+    Reviews Content
+============= */
+#reviews-hero {
+	background-image: url('../img/Classes/classhero.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+	text-align: center;
+	@include lg {
+		height: 700px;
+	}
+	h1 {
+		color: $navy;
+	}
+	.hero-scribble {
+		height: 120px;
+		padding-top: 105px;
+		@include lg {
+			height: 160px;
+			padding-right: 15px;
+			padding-top: 155px;
+		}
+	}
+}
+
+#reviews-reviews{
+    background-color: $pale-cream;
+}

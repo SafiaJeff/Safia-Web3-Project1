@@ -550,7 +550,8 @@ a:visited {
   font-weight: 700;
   color: #1B4965;
   padding-top: 10px;
-  font-size: 1.25rem;
+  font-size: 1.5625rem;
+  padding-bottom: 20px;
 }
 @media (min-width: 768px) {
   .review aside p {
@@ -564,9 +565,26 @@ a:visited {
 }
 .review article {
   grid-area: reviewtext;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .review article p {
   border: 1px green solid;
+}
+@media (min-width: 768px) {
+  .review article p {
+    padding: 0px 50px;
+  }
+}
+@media (min-width: 1025px) {
+  .review article p {
+    padding: 0px 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .review article p {
+    padding: 0px 150px;
+  }
 }
 
 /* =============
@@ -2183,4 +2201,24 @@ footer > div #footer-scribble {
 
 #reviews-reviews {
   background-color: #FFF2DA;
+  padding: 50px 0px;
+}
+@media (min-width: 768px) {
+  #reviews-reviews {
+    padding: 100px 50px;
+  }
+}
+
+#review1, #review2 {
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  #review1, #review2 {
+    margin-bottom: 150px;
+  }
+}
+@media (min-width: 1025px) {
+  #review1, #review2 {
+    margin-bottom: 200px;
+  }
 }

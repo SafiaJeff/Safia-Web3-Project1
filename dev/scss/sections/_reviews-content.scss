@@ -2,28 +2,89 @@
     Reviews Content
 ============= */
 #reviews-hero {
-	background-image: url('../img/Classes/classhero.jpg');
+	background-image: url('../img/Reviews/reviewhero.jpg');
 	background-position: center;
 	background-size: cover;
 	height: 500px;
 	text-align: center;
+
+	margin-top: 50px;
+
+	@include md{
+		margin-top: 90px;
+	}
+
 	@include lg {
 		height: 700px;
 	}
+
 	h1 {
 		color: $navy;
 	}
+
 	.hero-scribble {
 		height: 120px;
 		padding-top: 105px;
+
 		@include lg {
-			height: 160px;
+			height: 200px;
 			padding-right: 15px;
-			padding-top: 155px;
+			padding-top: 140px;
 		}
 	}
 }
 
-#reviews-reviews{
-    background-color: $pale-cream;
+#reviews-reviews {
+	#stars {
+		display: flex;
+
+		// border: 1px red solid;
+		padding: 10px;
+
+		@include lg {
+			margin: 0px 400px;
+		}
+
+		img {
+			flex: 1;
+			height: 50px;
+
+			@include lg {
+				height: 70px;
+			}
+
+		}
+
+		padding-top: 30px;
+
+		@include md {
+			margin-top: 30px;
+		}
+
+		@include lg {
+			margin-top: 100px;
+			margin-bottom: 20px;
+		}
+
+	}
+
+	background-color: $pale-cream;
+	padding: 50px 0px;
+
+	@include md {
+		padding: 100px 50px;
+	}
+}
+
+#review1,
+#review2 {
+	margin-bottom: 50px;
+
+	@include md {
+		margin-bottom: 150px;
+	}
+
+	@include lg {
+		margin-bottom: 200px;
+	}
 }

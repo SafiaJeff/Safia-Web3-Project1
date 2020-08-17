@@ -172,11 +172,14 @@ a:visited {
 }
 
 .review{
-    border: 1px red solid;
+    // border: 1px red solid;
+    
+
     @include md{
         display: grid;
         grid-template-columns: 30% auto;
         grid-template-areas: "reviewphoto reviewtext";
+        
     }
 
     @include lg{
@@ -190,7 +193,7 @@ a:visited {
 
     aside{
         grid-area: reviewphoto;
-        border: 2px pink solid;
+        // border: 2px pink solid;
         display: grid;
         
         
@@ -199,6 +202,10 @@ a:visited {
             margin-right: auto;
             height: 150px;
             border-radius: 100px;
+            
+            @include md{
+                margin-top: 30px;
+            }
 
             @include lg{
                 height: 200px;
@@ -210,33 +217,38 @@ a:visited {
             font-weight: 700;
             color: $navy;
             padding-top: 10px;
-            font-size: rem-calc(20);
+            font-size: rem-calc(25);
+            padding-bottom: 20px;
 
             @include md{
                 font-size: rem-calc(23);
             }
 
             @include lg{
-                font-size: rem-calc(25);
+                font-size: rem-calc(30);
             }
         }
     }
     article{
         grid-area: reviewtext;
+        margin-top: auto;
+        margin-bottom: auto;
         p{
-            border: 1px green solid;
-            // place-items: center;
-            // @include md{
-            //     padding: 0px 50px;
-            // }
+            // border: 1px green solid;
+            
+            
+            
+            @include md{
+                padding: 0px 50px;
+            }
 
-            // @include lg{
-            //     padding: 0px 150px;
-            // }
+            @include lg{
+                padding: 0px 50px;
+            }
 
-            // @include xl{
-            //     padding: 0px 200px;
-            // }
+            @include xl{
+                padding: 0px 150px;
+            }
             
             
         }

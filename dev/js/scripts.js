@@ -9,7 +9,10 @@
 
 // @codekit-prepend "main-nav/main-nav-click.js";
 
-// console.log( "ready!");
+// @codekit-prepend "gsap-register.js";
+// @codekit-prepend "scroll-trigger/reviews.js";
+// @codekit-prepend "scroll-trigger/stars.js";
+
 
 
 $(document).ready(function () {

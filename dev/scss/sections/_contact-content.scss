@@ -8,6 +8,12 @@
     height: 500px;
     text-align: center;
 
+    margin-top: 50px;
+
+    @include md{
+        margin-top: 90px;
+    }
+
     @include lg {
         height: 700px;
     }
@@ -41,6 +47,8 @@
     background-repeat: no-repeat;
 
     padding: 100px 0px 230px 0px;
+
+    
 
     @include md {
         background-position-x: 300px;

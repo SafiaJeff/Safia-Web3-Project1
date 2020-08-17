@@ -36,17 +36,17 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 29" width="47" height="40" id="burger">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
                       <g stroke-width="6">
-                        <path id="bottom-line" stroke="#000" d="M4.5 24.5h38" class="lines" />
-                        <path id="middle-line" stroke="#000" d="M4.5 14.5h38" class="lines" />
+                        <path id="bottom-line" stroke="#55BF9E" d="M4.5 24.5h38" class="lines" />
+                        <path id="middle-line" stroke="#55BF9E" d="M4.5 14.5h38" class="lines" />
                         <g id="arrow-down" transform="translate(4.5 14)">
-                          <path id="down-left-arrow" stroke="red" d="M0 .5h10" />
-                          <path id="down-right-arrow" stroke="#DE0000" d="M0 .5h10" />
+                          <path id="down-left-arrow" stroke="#55BF9E" d="M0 .5h10" />
+                          <path id="down-right-arrow" stroke="#55BF9E" d="M0 .5h10" />
                         </g>
                         <g id="arrow-up" transform="translate(32.5 14)">
-                          <path id="up-left-arrow" stroke="red" d="M0 .5h10" class="up-arrow" />
-                          <path id="up-right-arrow" stroke="#DE0000" d="M0 .5h10" class="up-arrow" />
+                          <path id="up-left-arrow" stroke="#55BF9E" d="M0 .5h10" class="up-arrow" />
+                          <path id="up-right-arrow" stroke="#55BF9E" d="M0 .5h10" class="up-arrow" />
                         </g>
-                        <path id="top-line" stroke="#000" d="M4.5 4.5h38" class="lines" />
+                        <path id="top-line" stroke="#55BF9E" d="M4.5 4.5h38" class="lines" />
                       </g>
                     </g>
                   </svg>
@@ -59,10 +59,10 @@
     <nav id="main-nav">
             <ul>
                 <li><a href="classes.html"><i class="fa fa-heart-o" aria-hidden="true"></i>Classes</a></li>
-                <li><a href="gallery.html"><i class="fa fa-camera" aria-hidden="true"></i>Gallery</a></li>
-                <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+                <li><a href="gallery.html"><i class="far fa-image"></i></i>Gallery</a></li>
+                <li><a href="contact.html"><i class="far fa-envelope"></i></i>Contact</a></li>
                 <li><a href="instagram.html"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-                <li><a href="reviews.html"><i class="fa fa-instagram" aria-hidden="true"></i>Reviews</a></li>
+                <li><a href="reviews.html"><i class="far fa-smile"></i></i>Reviews</a></li>
             </ul>
         </nav>
     <section id="reviews-hero">
@@ -76,37 +76,46 @@
             <section id="reviews-reviews" class="grid-container content-spacing">
                 <div>
             
+            
                     <section id="review1" class="review">
-                        <aside>
+                        <aside id="marlena">
                             <img src="img/Reviews/Marlena.jpg" alt="">
                             <p>Marlena S.</p>
                         </aside>
             
-                        <article>
-                            <p>We went there for our team outing after a long day of work. It was my first time trying the pottery class. I knew it would be fun, but I didn't expect it to be this fun! I guess a huge part of it was because the teacher did a great job in guiding us to appreciate the beauty and fun of making potteries!</p>
+                        <article class="review-text" id="marlena-quote">
+                            <p>"We went there for our team outing after a long day of work. It was my first time trying the pottery class. I knew it would be fun, but I didn't expect it to be this fun! I guess a huge part of it was because the teacher did a great job in guiding us to appreciate the beauty and fun of making potteries!"</p>
                         </article>
                     </section>
             
-                    <section id="review2" class="review">
-                        <aside>
+                    <section id="review2" class="review" >
+                        <aside id="peter">
                             <img src="img/Reviews/Peter.jpg" alt="">
                             <p>Peter G.</p>
                         </aside>
             
-                        <article>
-                            <p>Took a 2 hour wheel throwing class here and had so much fun!  This was my first time trying it, and the instructor did a great job of explaining the techniques and very patiently walked me through the parts I had trouble with.  Would definitely come back for more lessons in the future!</p>
+                        <article class="review-text" id="peter-quote">
+                            <p>"Took a 2 hour wheel throwing class here and had so much fun!  This was my first time trying it, and the instructor did a great job of explaining the techniques and very patiently walked me through the parts I had trouble with.  Would definitely come back for more lessons in the future!"</p>
                         </article>
                     </section>
             
                     <section id="review3" class="review">
-                        <aside>
+                        <aside id="devyn">
                             <img src="img/Reviews/Devyn.jpg" alt="">
                             <p>Devyn S.</p>
                         </aside>
             
-                        <article>
-                            <p>I've taken several classes here. It's a fantastic space with wonderful artists of all levels. Not being particularly artistic myself, I've learned a lot and met some wonderful people. Always something new to aspire to. Glaze Studio is an open space to share ideas, learn something new and meet great people! Highly recommended!</p>
+                        <article class="review-text" id="devyn-quote">
+                            <p>"I've taken several classes here. It's a fantastic space with wonderful artists of all levels. Not being particularly artistic myself, I've learned a lot and met some wonderful people. Always something new to aspire to. Glaze Studio is an open space to share ideas, learn something new and meet great people! Highly recommended!"</p>
                         </article>
+                    </section>
+            
+                    <section id="stars">
+                        <img class="stars" src="img/Reviews/star.svg">
+                        <img class="stars" src="img/Reviews/star.svg">
+                        <img class="stars" src="img/Reviews/star.svg">
+                        <img class="stars" src="img/Reviews/star.svg">
+                        <img class="stars" src="img/Reviews/star.svg">
                     </section>
             
                 </div>
@@ -147,6 +156,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <!-- Greensock ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
     <!-- Fancy Box -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- Tiny Slider -->

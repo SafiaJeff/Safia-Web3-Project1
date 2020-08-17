@@ -507,9 +507,6 @@ a:visited {
   }
 }
 
-.review {
-  border: 1px red solid;
-}
 @media (min-width: 768px) {
   .review {
     display: grid;
@@ -530,7 +527,6 @@ a:visited {
 }
 .review aside {
   grid-area: reviewphoto;
-  border: 2px pink solid;
   display: grid;
 }
 .review aside img {
@@ -538,6 +534,11 @@ a:visited {
   margin-right: auto;
   height: 150px;
   border-radius: 100px;
+}
+@media (min-width: 768px) {
+  .review aside img {
+    margin-top: 30px;
+  }
 }
 @media (min-width: 1025px) {
   .review aside img {
@@ -560,16 +561,13 @@ a:visited {
 }
 @media (min-width: 1025px) {
   .review aside p {
-    font-size: 1.5625rem;
+    font-size: 1.875rem;
   }
 }
 .review article {
   grid-area: reviewtext;
   margin-top: auto;
   margin-bottom: auto;
-}
-.review article p {
-  border: 1px green solid;
 }
 @media (min-width: 768px) {
   .review article p {
@@ -2193,9 +2191,9 @@ footer > div #footer-scribble {
 }
 @media (min-width: 1025px) {
   #reviews-hero .hero-scribble {
-    height: 160px;
+    height: 200px;
     padding-right: 15px;
-    padding-top: 155px;
+    padding-top: 140px;
   }
 }
 
@@ -2203,22 +2201,55 @@ footer > div #footer-scribble {
   background-color: #FFF2DA;
   padding: 50px 0px;
 }
+#reviews-reviews #stars {
+  display: flex;
+  padding: 10px;
+  padding-top: 30px;
+}
+@media (min-width: 1025px) {
+  #reviews-reviews #stars {
+    margin: 0px 400px;
+  }
+}
+#reviews-reviews #stars img {
+  flex: 1;
+  height: 50px;
+}
+@media (min-width: 1025px) {
+  #reviews-reviews #stars img {
+    height: 70px;
+  }
+}
+@media (min-width: 768px) {
+  #reviews-reviews #stars {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1025px) {
+  #reviews-reviews #stars {
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+}
 @media (min-width: 768px) {
   #reviews-reviews {
     padding: 100px 50px;
   }
 }
 
-#review1, #review2 {
+#review1,
+#review2 {
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
-  #review1, #review2 {
+  #review1,
+#review2 {
     margin-bottom: 150px;
   }
 }
 @media (min-width: 1025px) {
-  #review1, #review2 {
+  #review1,
+#review2 {
     margin-bottom: 200px;
   }
 }

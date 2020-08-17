@@ -440,6 +440,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/Reviews/jade-scarlato-ozznFZJo0Ms-unsplash.jpg": {
+		"ft": 16384,
+		"iS": 8434166,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Reviews/jade-scarlato-ozznFZJo0Ms-unsplash.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/Reviews/Marlena.jpg": {
 		"ft": 16384,
 		"iS": 22846,
@@ -461,6 +472,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"/deploy/img/Reviews/star.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/Reviews/star.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/deploy/index.html": {
 		"cB": 0,
@@ -636,6 +657,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/gsap-register.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/gsap-register-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/main-nav/burger-animation.js": {
 		"bF": 0,
 		"ft": 64,
@@ -710,6 +742,28 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/scroll-trigger/reviews.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/scroll-trigger/reviews-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/scroll-trigger/stars.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/scroll-trigger/stars-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -2541,7 +2595,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "tns, gsap",
+	"jsCheckerReservedNamesString": "tns, gsap, ScrollTrigger, TweenLite, TextPlugin",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

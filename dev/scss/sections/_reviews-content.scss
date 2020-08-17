@@ -2,12 +2,17 @@
     Reviews Content
 ============= */
 #reviews-hero {
-	background-image: url('../img/Classes/classhero.jpg');
+	background-image: url('../img/Reviews/reviewhero.jpg');
 	background-position: center;
 	background-size: cover;
 	height: 500px;
 	text-align: center;
 
+	margin-top: 50px;
+
+	@include md{
+		margin-top: 90px;
+	}
 
 	@include lg {
 		height: 700px;

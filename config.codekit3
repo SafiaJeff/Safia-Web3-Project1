@@ -440,17 +440,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/Reviews/jade-scarlato-ozznFZJo0Ms-unsplash.jpg": {
-		"ft": 16384,
-		"iS": 8434166,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Reviews/jade-scarlato-ozznFZJo0Ms-unsplash.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/deploy/img/Reviews/Marlena.jpg": {
 		"ft": 16384,
 		"iS": 22846,
@@ -468,6 +457,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/Reviews/Peter.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Reviews/reviewhero.jpg": {
+		"ft": 16384,
+		"iS": 8434166,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Reviews/reviewhero.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

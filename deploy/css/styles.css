@@ -1561,12 +1561,18 @@ footer > div #footer-scribble {
     Gallery Content
 ============= */
 #gallery-header {
+  margin-top: 50px;
   background-color: #1B4965;
   background-image: url("../img/Gallery/bluebg2.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
+}
+@media (min-width: 768px) {
+  #gallery-header {
+    margin-top: 90px;
+  }
 }
 @media (min-width: 1025px) {
   #gallery-header {
@@ -1676,11 +1682,17 @@ footer > div #footer-scribble {
     Classes Content
 ============= */
 #classes-hero {
+  margin-top: 50px;
   background-image: url("../img/Classes/classhero.jpg");
   background-position: center;
   background-size: cover;
   height: 500px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #classes-hero {
+    margin-top: 90px;
+  }
 }
 @media (min-width: 1025px) {
   #classes-hero {
@@ -1696,9 +1708,9 @@ footer > div #footer-scribble {
 }
 @media (min-width: 1025px) {
   #classes-hero .hero-scribble {
-    height: 160px;
+    height: 200px;
     padding-right: 15px;
-    padding-top: 155px;
+    padding-top: 140px;
   }
 }
 
@@ -1829,6 +1841,7 @@ footer > div #footer-scribble {
   #ig-header {
     height: 250px;
     background-size: contain;
+    margin-top: 90px;
     background-position-x: -110px;
   }
 }
@@ -1873,6 +1886,12 @@ footer > div #footer-scribble {
   background-size: cover;
   height: 500px;
   text-align: center;
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  #contact-hero {
+    margin-top: 90px;
+  }
 }
 @media (min-width: 1025px) {
   #contact-hero {
@@ -2171,11 +2190,17 @@ footer > div #footer-scribble {
     Reviews Content
 ============= */
 #reviews-hero {
-  background-image: url("../img/Classes/classhero.jpg");
+  background-image: url("../img/Reviews/reviewhero.jpg");
   background-position: center;
   background-size: cover;
   height: 500px;
   text-align: center;
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  #reviews-hero {
+    margin-top: 90px;
+  }
 }
 @media (min-width: 1025px) {
   #reviews-hero {
